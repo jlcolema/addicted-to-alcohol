@@ -1,0 +1,213 @@
+#chat-button-pop-up-container {
+    border-radius: 35px;
+    height: 70px;
+    width: 400px;
+    position: fixed;
+    bottom: 105px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  @media (max-width: 414px) {
+    #chat-button-pop-up-container {
+      width: 300px;
+      right: 5px;
+    }
+  }
+  
+  #chat-button-pop-up-content-container {
+    height: 70px;
+    width: 0%;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: black 0px 0px 5px;
+  }
+  
+  #chat-button-pop-up-content {
+    height: 70px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0;
+  
+  }
+  
+  @keyframes chatPopUpSlide {
+    0% {
+      width: 70px;
+    }
+  
+    10% {
+      width: 100%;
+    }
+  
+    90% {
+      width: 100%;
+    }
+  
+    100% {
+      width: 70px;
+    }
+  }
+  
+  @keyframes displayPopUpText {
+    10% {
+      opacity: 0;
+    }
+  
+    15% {
+      opacity: 1;
+    }
+  
+    85% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 0;
+    }
+  }
+  
+  #chat-button-pop-up-content h6 {
+    margin: 0 0 3px 0;
+    font-size: 15px;
+  }
+  
+  #chat-button-pop-up-content p {
+    line-height: 1;
+    margin: unset;
+    font-size: 14px;
+  }
+  
+  #chat-button-pop-up-content img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 0px 10px 0px 16px;
+  }
+  
+  #chat-button-pop-up-text {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  } 
+  #chat-button-pop-up-container {
+    z-index: 799;
+  }
+    #chat-button {
+      height: 60px;
+      width: 60px;
+      bottom: 105px;
+      right: 20px;
+      position: fixed;
+      cursor: pointer;
+      z-index: 800;
+  }
+      #chat-button:active {
+        opacity: .6;
+      }
+      @media (max-width: 414px) {
+          #chat-button {
+              right: 10px;
+          }
+          #chat-button {
+            height: 50px;
+            width: 50px;
+          }
+      }
+      .embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled {
+          display: none;
+      }
+      .embeddedServiceHelpButton .helpButton .uiButton.helpButtonEnabled {
+          display: none;
+      }
+      .embeddedServiceLiveAgentStateChatHeader .content {
+          margin-bottom: 10px;
+      }
+      .embeddedServiceHelpButton .helpButton .uiButton {
+          background-color: #8b252a;
+          font-family: "Open Sans", sans-serif;
+      }
+      .embeddedServiceLiveAgentStateWaitingHeader .waitingGreeting {
+          font-size: 25px;
+          margin-top: unset;
+      }
+      .embeddedServiceLiveAgentStateWaitingHeader .waitingMessage {
+          font-size: 20px;
+      }
+      .embeddedServiceSidebarDialogState #dialogTextTitle {
+          font-size: 30px;
+      }
+      .embeddedServiceSidebarDialogState #dialogTextBody {
+          font-size: 15px;
+      }
+      .embeddedServiceSidebarButton {
+          font-size: 22px;
+      }
+      .embeddedServiceHelpButton .helpButton {
+          bottom: 12px;
+          width: unset;
+      }
+      .embeddedServiceHelpButton .helpButton .uiButton {
+          border-radius: 100px;
+          max-width: unset;
+      }
+      .embeddedServiceHelpButton .uiButton .helpButtonLabel {
+          font-size: 15px;
+      }
+      .embeddedServiceHelpButton .helpButton .uiButton:hover::before, .embeddedServiceHelpButton .helpButton .uiButton:focus::before {
+          border-radius: 100px;
+      }
+      @media only screen and (min-width: 48em) {
+          .embeddedServiceHelpButton .helpButton .uiButton:hover::before button, .embeddedServiceHelpButton .helpButton .uiButton:focus::before button{
+              border-radius: 100px;
+          }
+      }
+      .embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before, .embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before {
+          background-color: #8b252a;
+      }
+      .helpButtonEnabled:focus .helpButtonLabel {
+          text-decoration: unset;
+      }
+      .embeddedServiceSidebarButton:focus {
+          text-decoration: unset;
+      }
+      .embeddedServiceSidebarButton:not(:disabled):focus, .embeddedServiceSidebarButton:not(:disabled):hover {
+          background: #8b252a;
+      }
+      .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):focus, .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover {
+          background-color: #8b252a;
+      }
+      .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):focus, .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover {
+          background-color: #8b252a;
+      }
+      .embeddedServiceSidebarButton.uiButton--inverse .label {
+          color: #ffffff;
+      }
+      .embeddedServiceSidebarButton.uiButton--inverse, .embeddedServiceSidebarButton.uiButton--inverse:disabled {
+          background: #8b252a;
+      }
+      .embeddedServiceSidebarHeader #headerTextLabel, .embeddedServiceSidebarHeader #headerSubtext {
+          overflow: visible;
+      }
+      .embeddedServiceSidebarHeader .headerText {
+          margin: 10px 0;
+      }
+      .embeddedServiceSidebarHeader .headerButton:focus:after {
+          border: none;
+      }
+      .embeddedServiceLiveAgentStateChatHeaderOption:hover {
+          color: #fff;
+      }
+      .embeddedServiceLiveAgentStateChatHeaderOption.chatOption:focus:after {
+          border: none;
+      }
+      .embeddedServiceSidebarHeader .headerItem:focus:after {
+          border: none;
+      }
+   .embeddedServiceLiveAgentStateChatInputFooter .chatActionButton.Send {
+       display: none;
+   }

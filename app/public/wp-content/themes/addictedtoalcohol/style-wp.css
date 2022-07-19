@@ -1,0 +1,62 @@
+.box-content h3 span {
+	font-weight: bold;
+}
+.hero-sec-v2 .opacity, .hero-sec-v2 .bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.hero-sec-v2 .bg {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Pagination */
+.nav-numbers .page-numbers.current {
+	background-color: #EAE9F3;
+	padding: 5px 10px;
+	margin: 0 0 5px;
+	font-size: 13px;
+	color: #000 !important;
+}
+.nav-numbers a {
+	padding: 5px 10px;
+	font-size: 13px;
+	color: #000;
+}
+.nav-numbers a:hover{
+	text-decoration: none;
+}
+.nav-numbers {
+	clear: both;
+	width: 100%;
+}
+.box-items .box-content.flex-wrap {
+	width: 100%;
+}
+.page-anchors li:last-child a {
+	border-right: none;
+}
+.additional-info.article_sources .article-source {
+	margin-top: 0;
+}
+.meta-date span {
+	font-weight: normal;
+}
+
+@media only screen and (min-width: 768px){
+	.our-facility.sec-reverse .col-12:first-child {
+		order: 2;
+		max-width: 40%;
+		margin-left: auto;
+	}
+}
+
+@media only screen and (max-width: 1140px){
+	.container-fluid .box {
+		padding: 0 25px;
+	}
+}
