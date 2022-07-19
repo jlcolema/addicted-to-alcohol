@@ -767,6 +767,6 @@ get_header(); ?>
 	<?php endwhile; ?>
 <?php endif; ?>	
 
-<?php if(is_front_page()) echo do_shortcode('[ark-chat]'); ?>
+<?php /* if(is_front_page()) echo do_shortcode('[ark-chat]'); */ ?>
 	
 <?php get_footer(); ?>

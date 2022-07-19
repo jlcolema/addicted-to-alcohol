@@ -91,11 +91,15 @@
 		</div>
 	</div>
 
+	<?php /*
+
 	<div class="widget">
 		<div class="text-widget">
 			<?php echo do_shortcode('[ark-chat type="sidebar"]'); ?>
 		</div>
 	</div>
+
+	*/ ?>
 	
 	
 	
