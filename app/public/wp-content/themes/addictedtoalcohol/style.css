@@ -11,6 +11,7 @@ License URI: http://opensource.org/licenses/mit-license.php
 :root {
 	--ata-blue: #03b0ff;
 	--ata-gold: #d68e29;
+	--ata-pink: rgba(255, 192, 203, 0.65);
 }
 
 /* Main Style */
@@ -123,29 +124,145 @@ img{
 }
 
 /* -----------------------------
-* Header
-* -------------------------- */
+ * Header
+ * -------------------------- */
 
-header {}
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: #ffffff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.19);
+	z-index: 99;
+}
 
-	header .container {}
+	.header__container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 
-	header .mobile-nav-overlay {}
+		.header__row {}
+
+			.header__col {}
+
+				/* Logo */
+
+				.logo {}
+
+					.logo__link {}
+
+						.logo__img {
+							max-width: 200px;
+						}
+
+				/* Primary Navigation */
+
+				.primary-nav {}
+
+					.primary-nav__container {}
+
+						.primary-nav__toggle {}
+
+							.primary-nav__icon {}
+
+						.primary-nav__div {}
+
+							.primary-nav__list {}
+
+								.primary-nav__list .nav-item {
+									font-size: 16px;
+									margin-bottom: 0;
+								}
+
+									.primary-nav__list .nav-link {
+										position: relative;
+										padding: 8px 20px 10px 20px !important;
+										color: var(--bs-gray-600);
+									}
+
+									/* While the `.nav-item` is being hovered, display a blue border-bottom on `.nav-link`. */
+
+									.primary-nav__list .nav-item:hover .nav-link::before,
+									.primary-nav__list .nav-item.active .nav-link::before {
+										content: "";
+										position: absolute;
+										left: 0;
+										bottom: 0;
+										width: 100%;
+										height: 3px;
+										background: #03b0ff; /* A littler darker than `--ata-blue`. */
+										z-index: 2;
+									}
+
+									.primary-nav__list .nav-link:hover {
+										background: none;
+									}
+
+									.primary-nav__list .dropdown-menu {
+										padding-top: 0;
+										padding-bottom: 0;
+										border: none;
+										border-radius: 0;
+										background: var(--bs-white);
+										box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+									}
+
+										.primary-nav__list .dropdown-menu .nav-item {
+											font-size: 13px;
+										}
+
+											.primary-nav__list .dropdown-menu .dropdown-item {
+												position: static;
+												padding: 9px 20px 9px 20px !important;
+												color: var(--bs-gray-600);
+											}
+
+											/* When `.dropdown-item` is in focus or the active page, display in white text with a blue background. */
+
+											.primary-nav__list .dropdown-menu .dropdown-item:hover,
+											.primary-nav__list .dropdown-menu .dropdown-item:focus,
+											.primary-nav__list .dropdown-menu .nav-item.active .dropdown-item {
+												color: var(--bs-white);
+												background: var(--ata-blue);
+											}
+
+											/* Remove blue bottom border from `.dropdown-item'. */
+
+											.primary-nav__list .dropdown-menu .dropdown-item:hover::before {
+												content: none;
+											}
+
+				/* CTA */
+
+				.primary-cta {}
+
+					.primary-cta__title {
+						line-height: 20px !important;
+						color: var(--bs-gray-600);
+					}
+
+					.primary-cta__phone {
+						font-size: 25px;
+						font-weight: 600;
+						line-height: 25px;
+						letter-spacing: -1.3px;
+					}
+
+						.primary-cta__link {
+							color: var(--ata-blue);
+							text-decoration: none;
+						}
+
+						.primary-cta__link:hover,
+						.primary-cta__link:focus {
+							color: var(--ata-blue);
+						}
 
 	header .navbar {}
 
-header{
-	/* min-height:122px; */
-	position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: #fff;
-    z-index: 99;
-}
-
-.logged-in header{
-	margin-top:32px;
+.logged-in header {
+	/* margin-top:32px; */
 }
 
 header.fixed-header{
@@ -153,34 +270,30 @@ header.fixed-header{
 }
 
 header .container{
-	padding-top:20px;
-	padding-bottom:20px;
+	/* padding-top:20px; */
+	/* padding-bottom:20px; */
 }
 
 .after-header{
 	min-height:145px;
 }
 
-header img{
-	width:285px;
-}
-
 .header-cta{
-	display:flex;
+	/* display:flex;
 	justify-content:flex-end;
-	align-items:center;
+	align-items:center; */
 }
 
 .header-cta p{
 	margin-bottom:0px;
 	font-size:12px;
-	text-align:right;
+	/* text-align:right; */
 	font-family: "Verdana", Sans-serif;
 
 }
 
 .header-cta a{
-	margin-left:20px;
+	/* margin-left:20px; */
 }
 
 .header-cta strong{
@@ -193,21 +306,21 @@ header img{
 }
 
 nav{
-	box-shadow:rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 0px;
+	/* box-shadow:rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 0px; */
 	padding:5px 10px !important;
 }
 
 .navbar-nav > li{
-	padding:0px 13px;
+	/* padding:0px 13px; */
 }
 
 .navbar-nav > li a{
-	font-size:14px;
+	/* font-size:14px; */
 }
 
 .dropdown-menu{
 	margin-top:0px;
-	margin-left: -20px !important;
+	/* margin-left: -20px !important; */
 }
 
 /* -----------------------------
@@ -2969,7 +3082,7 @@ width: 0;
 
 .dropdown-item {
     /*padding: 0.50rem 1.5rem !important;*/
-color: #212529 !important;
+/* color: #212529 !important; */
 }
 
 #menu-privacy{

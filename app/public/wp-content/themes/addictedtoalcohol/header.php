@@ -58,84 +58,117 @@ SCHEMA;
 	$body_class = get_field('css_selector');
 	?>
 	
-	<body <?php body_class($body_class); ?>>
+<body <?php body_class($body_class); ?>>
 
+	<header class="header">
 
-	<header>
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-7 col-md-5">
-					<a href="<?php echo home_url(); ?>">
-						<?php
-							$logo = get_field('logo', 'option');
-						?>
-						<?php if($logo): ?>
-							<img src="<?php echo $logo['url']; ?>" srcset="<?php echo $logo['url']; ?> 2x" alt="" />
-						<?php endif; ?>
+		<div class="container header__container">
+		
+			<div class="row align-items-center header__row">
+				
+				<!-- Logo -->
+
+				<div class="col header__col">
+
+					<div class="logo">
+
+						<a href="<?php echo home_url(); ?>" class="logo__link">
+					
+							<?php
+								$logo = get_field('logo', 'option');
+							?>
 						
-					</a>
-					<div id="joint-commission">
-						<!-- <img src="/wp-content/uploads/2020/01/joint-commission-150x150-1.png" style="width:60px"> -->
+							<?php if($logo): ?>
+								<img src="<?php echo $logo['url']; ?>" srcset="<?php echo $logo['url']; ?> 2x" alt="" class="logo__img" />
+							<?php endif; ?>
+					
+						</a>
+	
 					</div>
+
 				</div>
-				<div class="col-5 mobile-header d-xs-block d-sm-block d-md-none">
-					<?php
-						$title_header = get_field('title_header', 'option');
-						$button_header = get_field('button_header', 'option');
-						if($title_header): ?>
-							<p><?php echo $title_header; ?></p>
-						<?php endif; ?>
-						<?php if($button_header): ?>
-							<a href="<?php echo $button_header['url']; ?>"><i class="fas fa-phone-alt"></i> <?php echo $button_header['title']; ?></a>
-						<?php endif; ?>
+
+				<!-- Primary Menu -->
+
+				<div class="col header__col">
+
+					<nav class="navbar navbar-expand-lg primary-nav">
+					
+						<div class="container-fluid primary-nav__container">
+
+							<button class="navbar-toggler primary-nav__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    							<span class="navbar-toggler-icon primary-nav__icon"></span>
+    						</button>
+
+							<?php
+					
+								wp_nav_menu(
+									array(
+										// 'menu'			 => '',
+										// 'menu_class'		 => 'navbar-nav w-100',
+										// 'container'		 => '<div>',
+										'container_class'	 => 'collapse navbar-collapse primary-nav__div',
+										'container_id'	 	 => 'navbarNavDropdown',
+										'fallback_cb'	 	 => 'WP_Bootstrap_Navwalker::fallback',
+										// 'before'			 => '',
+										// 'after'			 => '',
+										// 'link_before'	 => '',
+										// 'link_after'		 => '',
+										// 'echo'			 => '',
+										'depth'				 => '2',
+										'walker'			 => new WP_Bootstrap_Navwalker(),
+										'theme_location'	 => 'primary',
+										'items_wrap'		 => '<ul class="navbar-nav primary-nav__list %2$s">%3$s</ul>',
+										// 'item_spacing'	 => 'preserve',
+									)
+								);
+								
+							?>
+
+						</div>
+			
+					</nav>	
+				
 				</div>
-				<div class="col-12 col-md-7 d-none d-md-block">
-					<div class="header-cta">
+
+				<!-- CTA -->
+
+				<div class="col header__col">
+
+					<div class="text-end header-cta primary-cta">
+	
 						<?php
 
 							if( have_rows('cta', 'option') ):
+						
 								while( have_rows('cta', 'option') ) : the_row();
 								
 								$title = get_sub_field('title');
-								$sub_title = get_sub_field('sub_title');
+								// $sub_title = get_sub_field('sub_title');
 								$button = get_sub_field('button');
 							?>
-								<p><strong><?php echo $title; ?></strong>
-								<?php echo $sub_title; ?></p>
-								<a class="btn btn-secondary" href="<?php echo $button['url']; ?>"><i class="fas fa-phone-alt"></i> <?php echo $button['title']; ?> (419) 904-4158</a>
+
+							<p class="primary-cta__title">
+								<?php echo $title; ?>
+								<?php /* echo $sub_title; */ ?>
+							</p>
+							
+							<div class="primary-cta__phone">
+
+								<a class="primary-cta__link" href="<?php echo $button['url']; ?>">
+									<?php echo $button['title']; ?> (419) 904-4158
+								</a>
 
 						<?php endwhile; else : endif; ?>
+
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>		
-		<div class="mobile-nav-overlay"></div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-wrap">
-				<a href="<?php echo home_url(); ?>" class="logo-wrap">
-					<?php
-						$logo = get_field('logo', 'option');
-					?>
-					<?php if($logo): ?>
-						<img src="<?php echo $logo['url']; ?>" srcset="<?php echo $logo['url']; ?> 2x" alt="" />
-					<?php endif; ?>
-				</a>
-				<?php wp_nav_menu( array(
-					'theme_location'  => 'primary',
-					'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns.
-					'container'       => 'div',
-					'container_class' => 'collapse navbar-collapse',
-					'container_id'    => 'navbarSupportedContent',
-					'menu_class'      => 'navbar-nav w-100',
-					'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-					'walker'          => new WP_Bootstrap_Navwalker(),
-				) ); ?>
-			</div>
-			<button class="navbar-close"></button>
-		</nav>			
+		
 	</header>
 	<?php if(!is_front_page()): ?>
 	<div class="after-header"></div>
