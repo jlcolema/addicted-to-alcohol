@@ -481,20 +481,20 @@ get_header(); ?>
 			?>
 
 			<div class="blog-grid">
-				<div class="container">
-					<div class="row">
+				<div class="container blog-grid__container">
+					<div class="row blog-grid__row">
 						<?php if($section_heading) : ?>
-							<div class="col add-resources">
+							<div class="col add-resources blog-grid__col">
 								<?php if($section_heading) : ?>
-									<h2><?php echo $section_heading; ?></h2>
+									<h2 class="blog-grid__heading"><?php echo $section_heading; ?></h2>
 								<?php endif; ?>
 								<?php if($subheading) : ?>
-									<p><?php echo $subheading; ?></p>
+									<p class="blog-grid__subheading"><?php echo $subheading; ?></p>
 								<?php endif; ?>
 							</div>
 						<?php endif; ?>
 					</div>
-					<div class="row">
+					<div class="row blog-grid__row">
 						<?php
 							if($show_posts == 'Custom' && $select_posts) {
 								$args = array (
@@ -523,22 +523,22 @@ get_header(); ?>
 									$thumb_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 									$default_thumb = get_template_directory_uri().'/images/blog-grid-dummy-img.png';
 								?>
-								<div class="col">
-									<a href="<?php the_permalink(); ?>">
+								<div class="col blog-grid__col">
+									<a href="<?php the_permalink(); ?>" class="blog-grid__link">
 										<?php if(has_post_thumbnail()) : ?>
-											<img src="<?php echo $thumb[0]; ?>" alt="<?php echo $thumb_alt; ?>" />
+											<img src="<?php echo $thumb[0]; ?>" alt="<?php echo $thumb_alt; ?>" class="blog-grid__image" />
 										<?php else: ?>
-											<img src="<?php echo $default_thumb; ?>" alt="blog-image" />
+											<img src="<?php echo $default_thumb; ?>" alt="blog-image blog-grid__image" />
 										<?php endif; ?>
-										<h3><?php the_title(); ?></h3>
+										<h3 class="blog-grid__title"><?php the_title(); ?></h3>
 
 										<div class="blog-grid__excerpt">
 											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur earum dolor, ex, facere unde esse voluptatem nisi architecto itaque dolorum ut, quos eum soluta enim odio quisquam eligendi in consequatur?</p>
 										</div>
 
-										<div class="blog-grid__read-more">Read More</div>
+										<div class="blog-grid__read-more">Read More »</div>
 
-										<div class="date-meta"><?php echo get_the_date('F d, Y'); ?></div>
+										<div class="date-meta blog-grid__meta"><?php echo get_the_date('F d, Y'); ?></div>
 
 									</a>
 								</div>
@@ -546,11 +546,11 @@ get_header(); ?>
 
 						<?php endif; wp_reset_query(); wp_reset_postdata(); ?>
 					</div>
-					<div class="row">
+					<div class="row blog-grid__row">
 						<?php if($button) : ?>
-							<div class="d-grid col mx-auto">
+							<div class="d-grid col mx-auto blog-grid__col">
 								<?php if($button) : ?>
-									<a class="btn btn-primary btn-lg" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?> <i class="fas fa-caret-right"></i></a>
+									<a class="btn btn-secondary btn-md blog-grid__button" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?></a>
 								<?php endif; ?>
 							</div>
 						<?php endif; ?>
