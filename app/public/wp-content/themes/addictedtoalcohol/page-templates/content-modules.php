@@ -377,23 +377,23 @@ get_header(); ?>
 
 			<?php if ( have_rows( 'items' ) ) : ?>
 				<div class="why-choose">
-					<div class="container">
+					<div class="container why-choose__container">
 						<?php if($heading || $subheading) : ?>
-							<div class="row">
-								<div class="col-12 col-md-8 m-auto text-center text-black pb-5">
+							<div class="row why-choose__row">
+								<div class="col-12 col-md-10 m-auto text-center text-black pb-5 why-choose__col">
 									<?php if($section_pre_heading) : ?>
-										<div class="pre-heading-h2"><?php echo $section_pre_heading; ?></div>
+										<div class="pre-heading-h2 why-choose__preheading"><?php echo $section_pre_heading; ?></div>
 									<?php endif; ?>
 									<?php if($heading) : ?>
-										<h2><?php echo $heading; ?></h2>
+										<h2 class="why-choose__heading"><?php echo $heading; ?></h2>
 									<?php endif; ?>
 									<?php if($subheading) : ?>
-										<p><?php echo $subheading; ?></p>
+										<p class="why-choose__overview"><?php echo $subheading; ?></p>
 									<?php endif; ?>
 								</div>
 							</div>
 						<?php endif; ?>
-						<div class="row text-center text-black">
+						<div class="row justify-content-md-center text-center text-black why-choose__row">
 							<?php while ( have_rows( 'items' ) ) : the_row(); ?>
 								<?php  
 									$image = get_sub_field('image');
@@ -402,15 +402,15 @@ get_header(); ?>
 									$image_url = $image['sizes']['content-img-grid'];
 									$image_url_2x = $image['sizes']['content-img-grid-2x'];
 								?>
-								<div class="col-12 col-md-6 col-lg-4">
+								<div class="col col-3 why-choose__col">
 									<?php if($image) : ?>
-										<img src="<?php echo $image_url; ?>" srcset="<?php echo $image_url_2x; ?> 2x" alt="<?php echo $image['alt']; ?>" />
+										<img src="<?php echo $image_url; ?>" srcset="<?php echo $image_url_2x; ?> 2x" alt="<?php echo $image['alt']; ?>" class="why-choose__icon" />
 									<?php endif; ?>
 									<?php if($title) : ?>
-										<h3><?php echo $title; ?></h3>
+										<h3 class="why-choose__title"><?php echo $title; ?></h3>
 									<?php endif; ?>
 									<?php if($description) : ?>
-										<p><?php echo $description; ?></p>
+										<p class="why-choose__description"><?php echo $description; ?></p>
 									<?php endif; ?>
 								</div>
 							<?php endwhile; ?>
