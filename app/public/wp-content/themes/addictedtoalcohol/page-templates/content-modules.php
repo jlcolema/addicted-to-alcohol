@@ -45,7 +45,7 @@ get_header(); ?>
 							<p class="hero__subheading"><?php echo $subheading; ?></p>
 						<?php endif; ?>
 						<?php if($button) : ?>
-							<a class="btn btn-secondary btn-lg hero__button" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?> <?php if($add_phone_icon_to_button) : ?><i class="fas fa-phone"></i><?php endif; ?></a>
+							<a class="btn btn-secondary btn-md hero__button" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?> <?php if($add_phone_icon_to_button) : ?><i class="fas fa-phone"></i><?php endif; ?></a>
 						<?php endif; ?>
 					</div>
 					<div class="hero__wave hero__wave--lower">
