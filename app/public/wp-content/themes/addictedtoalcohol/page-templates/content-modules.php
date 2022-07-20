@@ -164,7 +164,7 @@ get_header(); ?>
 									<?php endif; ?>
 									<?php echo $content; ?>
 									<?php if($button) : ?>
-										<a class="btn btn-primary btn-lg" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?></a>
+										<a class="btn btn-secondary btn-md" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?></a>
 									<?php endif; ?>
 								</div>
 							</div>
