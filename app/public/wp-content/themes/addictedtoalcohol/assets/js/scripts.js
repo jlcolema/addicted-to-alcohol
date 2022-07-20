@@ -1,6 +1,6 @@
 (function($){	
 
-$('.carousel').carousel();
+// $('.carousel').carousel();
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 0) {
