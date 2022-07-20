@@ -13,7 +13,7 @@
 						<?php include(get_template_directory().'/templates/author-information.php'); ?>
 						<?php include(get_template_directory().'/templates/article-resources.php'); ?>
 					<?php endwhile; endif; ?>
-				</div>					
+				</div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-4" id="sidebar">
 				<?php get_sidebar(); ?>

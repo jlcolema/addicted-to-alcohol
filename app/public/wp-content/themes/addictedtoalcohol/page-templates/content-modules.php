@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/* Template Name: Content Modules */ 
+/* Template Name: Content Modules */
 
 get_header(); ?>
 
@@ -9,7 +9,7 @@ get_header(); ?>
 
 		<?php if ( get_row_layout() == 'hero_section' ) : ?>
 
-			<?php  
+			<?php
 				$layout = get_sub_field('layout');
 				$heading = get_sub_field('heading');
 				$bold_heading = get_sub_field('bold_heading');
@@ -134,7 +134,7 @@ get_header(); ?>
 				<div class="text-section who-we-are">
 					<div class="container who-we-are__container">
 						<?php while ( have_rows( 'content_rows' ) ) : the_row(); ?>
-							<?php  
+							<?php
 								$content_layout = get_sub_field('content_layout');
 								$content = get_sub_field('content');
 								$media_type = get_sub_field('media_type');
@@ -177,7 +177,7 @@ get_header(); ?>
 
 			<?php if ( have_rows( 'content_rows' ) ) : ?>
 				<?php $content_row=0; $slider_block=1; while ( have_rows( 'content_rows' ) ) : the_row(); ?>
-					<?php  
+					<?php
 						$pre_heading = get_sub_field('pre-heading');
 						$heading = get_sub_field('heading');
 						$content = get_sub_field('content');
@@ -195,7 +195,7 @@ get_header(); ?>
 											<div class="box">
 												<?php if($heading) : ?>
 													<div class="title">
-														<h2><?php echo $heading; ?></h2> 
+														<h2><?php echo $heading; ?></h2>
 													</div>
 												<?php endif; ?>
 												<?php if($content) : ?>
@@ -204,7 +204,7 @@ get_header(); ?>
 													</div>
 												<?php endif; ?>
 												<?php if($button) : ?>
-													<div class="button-wrapper two"> 
+													<div class="button-wrapper two">
 														<a class="btn" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?><i class="fas fa-caret-right ml-6"></i></a>
 													</div>
 												<?php endif; ?>
@@ -304,7 +304,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'hover_content_box' ) : ?>
 
-			<?php 
+			<?php
 				$section_heading = get_sub_field('section_heading');
 				$subheading = get_sub_field('subheading');
 				$button_text = get_sub_field('button_text');
@@ -331,7 +331,7 @@ get_header(); ?>
 						<div class="offers">
 							<div class="row">
 								<?php while ( have_rows( 'items' ) ) : the_row(); ?>
-									<?php  
+									<?php
 										$title = get_sub_field('title');
 										$description = get_sub_field('description');
 										$image = get_sub_field('image');
@@ -344,8 +344,8 @@ get_header(); ?>
 												<h4><?php echo $title; ?></h4>
 											<?php endif; ?>
 											<?php if($description) : ?>
-												<p><?php echo $description; ?>												
-											</p>												
+												<p><?php echo $description; ?>
+											</p>
 											<?php endif; ?>
 										</a>
 									</div>
@@ -355,7 +355,7 @@ get_header(); ?>
 										<div class="full-btn-cnt">
 										<a class="btn btn-secondary btn-lg full-btn" href="<?php echo esc_url($button_url); ?>">
 											<i class="fas fa-phone-alt" aria-hidden="true"></i>
-											<?php echo $button_text; ?>											
+											<?php echo $button_text; ?>
 										</a>
 										</div>
 									</div>
@@ -368,7 +368,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'content_image_grid' ) : ?>
 			
-			<?php  
+			<?php
 				$section_pre_heading = get_sub_field('section_pre_heading');
 				$heading = get_sub_field('heading');
 				$subheading = get_sub_field('subheading');
@@ -395,7 +395,7 @@ get_header(); ?>
 						<?php endif; ?>
 						<div class="row justify-content-md-center text-center text-black why-choose__row">
 							<?php while ( have_rows( 'items' ) ) : the_row(); ?>
-								<?php  
+								<?php
 									$image = get_sub_field('image');
 									$title = get_sub_field('title');
 									$description = get_sub_field('description');
@@ -428,7 +428,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'testimonials' ) : ?>
 
-			<?php  
+			<?php
 				$section_pre_heading = get_sub_field('section_pre_heading');
 				$heading = get_sub_field('heading');
 			?>
@@ -447,7 +447,7 @@ get_header(); ?>
 								<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 								  <div class="carousel-inner">
 								  	<?php $item=1; while ( have_rows( 'items' ) ) : the_row(); ?>
-								  		<?php  
+								  		<?php
 								  			$quote = get_sub_field('quote');
 								  			$person_name = get_sub_field('person_name');
 								  			$short_intro = get_sub_field('short_intro');
@@ -472,7 +472,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'blog' ) : ?>
 
-			<?php  
+			<?php
 				$section_heading = get_sub_field('section_heading');
 				$subheading = get_sub_field('subheading');
 				$show_posts = get_sub_field('show_posts');
@@ -517,7 +517,7 @@ get_header(); ?>
 						?>
 
 							<?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
-								<?php 
+								<?php
 									$attachment_id = get_post_thumbnail_id(get_the_ID());
 									$thumb = wp_get_attachment_image_src($attachment_id, 'blog-grid-img', true);
 									$thumb_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
@@ -561,7 +561,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'center_heading_content' ) : ?>
 
-			<?php  
+			<?php
 				$section_pre_heading = get_sub_field('section_pre_heading');
 				$heading = get_sub_field('heading');
 				$content = get_sub_field('content');
@@ -586,14 +586,14 @@ get_header(); ?>
 									<?php echo $content; ?>
 								</div>
 							<?php endif; ?>
-						</div>     
-					</div>    
+						</div>
+					</div>
 				</div>
 			</section>
 		
 		<?php elseif ( get_row_layout() == 'cta' ) : ?>
 
-			<?php  
+			<?php
 				$heading = get_sub_field('heading');
 				$button = get_sub_field('button');
 				$add_padding = get_sub_field('add_padding');
@@ -609,15 +609,15 @@ get_header(); ?>
 							<?php  ?>
 							<a class="btn btn-secondary" href="<?php echo $button['url']; ?>"><?php echo $button['title']; ?></a>
 							
-						</div>     
-					</div>    
+						</div>
+					</div>
 			</section>
 
 
 
 		<?php elseif ( get_row_layout() == 'content_columns' ) : ?>
 
-			<?php  
+			<?php
 				$heading = get_sub_field('heading');
 				$columns = get_sub_field('columns');
 				$background = get_sub_field('background');
@@ -634,15 +634,15 @@ get_header(); ?>
 								<div><?php echo get_sub_field('content'); ?></div>
 							 <?php endwhile; ?>
 							<?php endif; ?>
-						</div>     
-					</div>    
+						</div>
+					</div>
 			</section>
 
 
 
 		<?php elseif ( get_row_layout() == 'content_blocks_v2' ) : ?>
 
-			<?php  
+			<?php
 				$heading = get_sub_field('heading');
 				$pre_heading = get_sub_field('pre-heading');
 				$sub_heading = get_sub_field('sub_heading');
@@ -664,7 +664,7 @@ get_header(); ?>
 						
 						<div class="content-block-wrapper">
 						<?php if ( have_rows( 'blocks_content' ) ) : ?>
-							<?php while ( have_rows( 'blocks_content' ) ) : the_row(); 
+							<?php while ( have_rows( 'blocks_content' ) ) : the_row();
 							
 							$thumbnail = get_sub_field('thumbnail');
 							$title = get_sub_field('title');
@@ -692,8 +692,8 @@ get_header(); ?>
 								</div>
 							 <?php endwhile; ?>
 							<?php endif; ?>
-						</div>     
-					</div>    
+						</div>
+					</div>
 			</section>
 
 
@@ -708,7 +708,7 @@ get_header(); ?>
 				            <div class="box">
 				                <div class="group d-flex flex-wrap justify-content-between">
 				                	<?php while ( have_rows( 'items' ) ) : the_row(); ?>
-				                		<?php  
+				                		<?php
 				                			$heading = get_sub_field('heading');
 				                			$content = get_sub_field('content');
 				                			$button = get_sub_field('button');
@@ -739,7 +739,7 @@ get_header(); ?>
 		
 		<?php elseif ( get_row_layout() == 'accordion' ) : ?>
 				
-			<?php  
+			<?php
 				$section_heading = get_sub_field('section_heading');
 				$short_content = get_sub_field('short_content');
 				$background_image = get_sub_field('background_image');
@@ -780,7 +780,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 	<?php endwhile; ?>
-<?php endif; ?>	
+<?php endif; ?>
 
 <?php /* if(is_front_page()) echo do_shortcode('[ark-chat]'); */ ?>
 	
