@@ -1,22 +1,22 @@
-	<footer>
-		<div class="container">			
-			<div class="row">
-				<div class="col-12 col-md-4">
-					<a href="<?php echo home_url(); ?>">
+	<footer class="footer">
+		<div class="container footer__container">			
+			<div class="row footer__row">
+				<div class="col-12 col-md-4 footer__col">
+					<a href="<?php echo home_url(); ?>" class="footer-logo__link">
 						<?php
 							$logo_footer = get_field('logo_footer', 'option');
 							if($logo_footer): ?>
-								<img src="<?php echo $logo_footer['url']; ?>" srcset="<?php echo $logo_footer['url']; ?> 2x" alt="" />
+								<img src="<?php echo $logo_footer['url']; ?>" srcset="<?php echo $logo_footer['url']; ?> 2x" alt="" class="footer-logo__image" />
 							<?php endif; ?>
 					</a>
 					<?php
 						$about = get_field('about', 'option');
 						if($about): ?>
-							<p><?php echo $about; ?></p>
+							<p class="footer-about"><?php echo $about; ?></p>
 						<?php endif; ?>
 				</div>
-				<div class="col-12 col-md-8">
-					<div class="row">
+				<div class="col-12 col-md-8 footer__col">
+					<div class="row footer__row">
 						<?php custom_column_menu('footermenu'); ?>
 					</div>
 				</div>
@@ -25,9 +25,9 @@
 	</footer>
 	
 	<div class="copyrights">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6">
+		<div class="container copyrights__container">
+			<div class="row copyrights__row">
+				<div class="col-12 col-md-6 copyrights__col">
 					<ul>
 						<?php
 
@@ -51,7 +51,7 @@
 						<?php endwhile; else : endif; ?>
 					</ul>					
 				</div>
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6 copyrights__col">
 					<?php
 						$copyrights = get_field('copyrights', 'option');
 						$year = date("Y");

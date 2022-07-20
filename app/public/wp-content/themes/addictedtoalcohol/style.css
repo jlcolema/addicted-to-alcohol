@@ -805,15 +805,72 @@ nav{
 * Footer
 * -------------------------- */
 
-footer {}
+footer {
+	padding: 90px 0;
+}
 
 	footer .container {}
 
 		.footer .row {}
 
+			.footer__col {}
+
+				.footer-logo {}
+
+					.footer-logo__link {
+						display: inline-block;
+						margin-bottom: 20px;
+					}
+
+						.footer-logo__image {
+							max-width: 218px;
+							margin: 0;
+						}
+
+				.footer-about {
+					font-size: 14px !important;
+					font-weight: 400 !important;
+					line-height: 21px !important;
+					font-family:"Verdana", sans-serif;
+					color: var(--bs-gray-300);
+				}
+
+					.footer-about a {
+						text-decoration: none;
+					}
+
+					.footer-about a:hover {
+						color: var(--ata-blue);
+					}
+				
+				/* Footer Menu */
+
+				.footer h6 {
+					margin-bottom: 20px;
+				}
+
+					.footer h6 a {}
+
+					.footer h6 a:hover {}
+
+				.footer .secondary-menu {}
+
+					.footer .secondary-menu .menu-item {
+						margin: 0 0 5px 0;
+						font-size: 14px !important;
+						font-weight: 400 !important;
+						line-height: 21px !important;
+						font-family:"Verdana", sans-serif;
+					}
+
+						.footer .secondary-menu a {
+							color: var(--bs-gray-300) !important;
+						}
+
+						.footer .secondary-menu a:hover {}
+
 footer{
     background: #000000;
-	padding: 70px 0px 70px;	
 	display:flex;
 	/* margin-top: 50px; */
 	border-top: 5px solid var(--ata-blue);
@@ -844,23 +901,19 @@ footer .cta p{
 }
 
 footer p{
-	color: #ffffff;
-    font-size: 15px !important;
-    font-weight: 300 !important;
-    line-height: 22px !important;
-	font-family:"Verdana", sans-serif;
+
 
 }
 
 footer img{
-	margin-bottom:10px;
+	/* margin-bottom:10px; */
 }
 
 footer h6{
 	font-family: 'Verdana', sans-serif;
 	font-weight: 500;
 	font-size: 18px;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 
 footer h6 a {
@@ -872,14 +925,14 @@ footer h6 a {
 }
 
 footer ul li a{
-	color:#ffffff !important;
+	/* color:#ffffff !important; */
 	font-family:"Verdana", sans-serif;
 	text-decoration: none;
 }
 
 footer a{
 	color: var(--ata-blue);
-	font-size:13px;
+	/* font-size:13px; */
 }
 
 footer ul{
