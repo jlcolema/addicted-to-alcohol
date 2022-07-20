@@ -1,5 +1,5 @@
 	<footer class="footer">
-		<div class="container footer__container">			
+		<div class="container footer__container">
 			<div class="row footer__row">
 				<div class="col-12 col-md-4 footer__col">
 					<a href="<?php echo home_url(); ?>" class="footer-logo__link">
@@ -49,7 +49,7 @@
 								<li><a href="<?php echo $linkedin; ?>"><i class="fab fa-linkedin"></i></a></li>
 							<?php endif; ?>
 						<?php endwhile; else : endif; ?>
-					</ul>					
+					</ul>
 				</div>
 				<div class="col-12 col-md-6 copyrights__col">
 					<?php
@@ -80,7 +80,7 @@
     s.parentNode.insertBefore(wf, s);
   })();
 </script>
-<script>var $ = jQuery;$(function() {$('.lazy').lazy();});</script> 
+<script>var $ = jQuery;$(function() {$('.lazy').lazy();});</script>
 
 <div class="foot">
 <?php
@@ -101,15 +101,33 @@ if( have_rows('cta', 'option') ){
     </a>
 </div>
 </div>
-<!--Footer CTA-->
-<div class="callNowSpacer"></div>
-<div id="callNowFooter" class="container-fluid">
-	<div class="inner-container">
-		<div class="row">
-			<h3>Treatment Questions? Call 24/7.<a href="tel:+1234567890" class="wp-block-button__link"><i class="fas fa-phone-alt" aria-hidden="true"></i> (123) 456-7890</a></h3>
+
+	<!--Footer CTA-->
+
+	<?php /* <div class="callNowSpacer"></div> */ ?>
+
+	<div class="call-now">
+		
+		<div id="callNowFooter" class="container  call-now__container">
+							
+			<div class="row align-items-center justify-content-md-center call-now__row">
+				
+				<h3 class="col-md-auto call-now__heading">Treatment Questions? Call 24/7.</h3>
+				
+				<div class="col-md-auto call-now__button">
+				
+					<a href="tel:+4199044158" class="wp-block-button__link btn-primary btn-lg call-now__link"><i class="fas fa-phone-alt call-now__icon" aria-hidden="true"></i> (419) 904-4158</a>
+					
+				</div>
+				
+			</div>
+							
 		</div>
-	</div>       
-</div>
-	</body>
+		
+	</div>
+
+</body>
+
 <script defer src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
 </html>
