@@ -437,11 +437,43 @@ nav{
 
 }
 
+/* -----------------------------
+* Why Choose
+* -------------------------- */
 
-.who-we-are{
-	padding:100px 0px;
+/* -----------------------------
+* Who We Are
+* -------------------------- */
+
+.who-we-are {
+	padding: 125px 0px;
 	background: #f8fcff;
 }
+
+	.who-we-are__container {}
+
+		.who-we-are__row {}
+
+			.who-we-are__col {}
+
+				.who-we-are__heading {
+					margin-bottom: 20px;
+					font-size: 37px;
+					line-height: 1;
+					font-weight: 600;
+				}
+
+				.who-we-are__overview {
+					color: var(--bs-gray-700);
+				}
+
+					.who-we-are__overview p {
+						line-height: 24px !important;
+					}
+
+				.who-we-are__button {
+					margin-top: 20px;
+				}
 
 .what-we-offer{
 	background:#E8E8E8;
@@ -887,7 +919,6 @@ footer ul li{
     left: -20px;
 }
 
-.who-we-are .btn,
 .our-facility .btn{
 	margin-top:40px;
 }

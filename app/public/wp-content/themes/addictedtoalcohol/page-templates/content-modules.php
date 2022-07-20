@@ -132,7 +132,7 @@ get_header(); ?>
 
 			<?php if ( have_rows( 'content_rows' ) ) : ?>
 				<div class="text-section who-we-are">
-					<div class="container">
+					<div class="container who-we-are__container">
 						<?php while ( have_rows( 'content_rows' ) ) : the_row(); ?>
 							<?php  
 								$content_layout = get_sub_field('content_layout');
@@ -143,9 +143,9 @@ get_header(); ?>
 								$video_iframe = get_sub_field('video_iframe');
 								$button = get_sub_field('button');
 							?>
-							<div class="row">
+							<div class="row who-we-are__row">
 								<?php if($content_layout == 'Two Columns') : ?>
-									<div class="col-12 col-md-6">
+									<div class="col-12 col-md-6 who-we-are__col">
 										<?php if($media_type == 'Video') : ?>
 											<div class="video-container">
 												<?php if($video_url) : ?><iframe width="480" height="270" src="<?php echo $video_url; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><?php endif; ?>
@@ -160,11 +160,11 @@ get_header(); ?>
 								<?php endif; ?>
 								<div class="<?php if($content_layout == 'Two Columns') {echo 'col-12 col-md-6';} else{echo 'col-12';} ?>">
 									<?php if($section_heading) : ?>
-										<h2><?php echo $section_heading; ?></h2>
+										<h2 class="who-we-are__heading"><?php echo $section_heading; ?></h2>
 									<?php endif; ?>
-									<?php echo $content; ?>
+										<div class="who-we-are__overview"><?php echo $content; ?></div>
 									<?php if($button) : ?>
-										<a class="btn btn-secondary btn-md" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?></a>
+										<a class="btn btn-secondary btn-md who-we-are__button" target="<?php echo $button['target']; ?>" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['title']); ?></a>
 									<?php endif; ?>
 								</div>
 							</div>
