@@ -806,7 +806,7 @@ nav{
 * -------------------------- */
 
 footer {
-	padding: 90px 0;
+	padding: 90px 0 115px 0;
 }
 
 	footer .container {}
@@ -868,6 +868,25 @@ footer {
 						}
 
 						.footer .secondary-menu a:hover {}
+
+/* -----------------------------
+* Copyrights
+* -------------------------- */
+
+.copyrights {}
+
+	.copyrights__container {}
+
+		.copyrights__row {
+			padding-top: 30px;
+			padding-bottom: 70px;
+		}
+
+			.copyrights__col {}
+
+				.copyrights p {
+					line-height: 1 !important;
+				}
 
 footer{
     background: #000000;
@@ -951,7 +970,7 @@ footer ul li{
 
 .copyrights{
 	background:#000000;
-	padding: 25px 0px 25px 0px;
+	padding: 0 0px 25px 0px;
 	float: left;
     width: 100%;
 	padding: 25px 0px 125px 0px;
@@ -985,7 +1004,7 @@ footer ul li{
 	margin-bottom:0px;
 	text-align:right;
     font-weight: 400;
-    line-height: 19px !important;
+    /* line-height: 19px !important; */
 	color: var(--bs-gray-700) !important;
 	font-family:"Verdana", sans-serif;
 }
