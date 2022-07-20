@@ -328,12 +328,52 @@ nav{
 * -------------------------- */
 
 .hero{
+	position: relative;
 	background-size:cover;
 	background-position:center;
 	margin-top: 112px;
+	background-color: #138BD666;
 }
 
+.hero__wave {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+	.hero__svg {
+		position: relative;
+		display: block;
+		left: 50%;
+	}
+
+		.hero__svg .elementor-shape-fill {
+			fill: var(--bs-white);
+		}
+
+.hero__wave--upper {
+	top: 0;
+}
+
+	.hero__svg--upper {
+		width: calc(225% + 1.3px);
+		height: 280px;
+		transform: translate(-50%) rotateY(180deg);
+	}
+
+.hero__wave--lower {
+	bottom: 0;
+}
+
+	.hero__svg--lower {
+		width: calc(106% + 1.3px);
+		height: 181px;
+		transform: translateX(-50%) rotate(180deg);
+	}
+
 .hero .container{
+	position: relative;
 	display:flex;
 	justify-content:center;
 	align-items:flex-start;
@@ -341,6 +381,7 @@ nav{
 	min-height:531px;
 	/* max-width:1000px;
 	padding-bottom:50px; */
+	z-index: 1;
 }
 
 .hero .pre-heading{
