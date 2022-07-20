@@ -158,7 +158,7 @@ get_header(); ?>
 										<?php endif; ?>
 									</div>
 								<?php endif; ?>
-								<div class="<?php if($content_layout == 'Two Columns') {echo 'col-12 col-md-6';} else{echo 'col-12';} ?>">
+								<div class="<?php if($content_layout == 'Two Columns') {echo 'col-12 col-md-6 align-self-center who-we-are__col';} else{echo 'col-12';} ?>">
 									<?php if($section_heading) : ?>
 										<h2 class="who-we-are__heading"><?php echo $section_heading; ?></h2>
 									<?php endif; ?>
