@@ -27,6 +27,7 @@ app/public/wp-content/themes/*
 # Ignore source files.
 
 src/backups/
+src/design/
 
 # Ignore node dependency directories.
 
