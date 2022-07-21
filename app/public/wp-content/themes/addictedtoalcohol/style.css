@@ -6,6 +6,16 @@ License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
 */
 
+/* Ideal Site Structure
+ *
+ * 01. Header
+ * 02. Main
+ * 02.01. Hero, Section
+ * 02.02. Content
+ * 02.03. Sidebar
+ * 03. Footer
+*/
+
 /* Variables */
 
 :root {
@@ -458,7 +468,6 @@ nav{
 						
 						.widget {
 							margin: 0 0 40px 0;
-							background: var(--ata-pink);
 						}
 						
 						/* CTA */
@@ -520,6 +529,48 @@ nav{
 									.widget__cta .widget__icon {
 										display: none;
 									}
+
+						/* People Also Read */
+						
+						.widget__people {}
+						
+							.widget__links-widget {}
+							
+								.widget__people .widget__title {
+									position: relative;
+									margin-bottom: 20px;
+									padding-bottom: 15px;
+									font-size: 23px;
+									line-height: 1;
+									color: var(--bs-gray-800);
+								}
+								
+								.widget__people .widget__title::after {
+									content: "";
+									position: absolute;
+									left: 0;
+									bottom: 0;
+									width: 39%;
+									height: 2px;
+									background: var(--ata-gold);
+									z-index: 1;
+								}
+								
+								.widget__people .widget__list {}
+								
+									.widget__people .widget__item {
+										margin-bottom: 12px;
+										padding-bottom: 0;
+										line-height: 1.25;
+										font-weight: 600;
+									}
+									
+										.widget__people .widget__link {
+											text-decoration: none;
+										}
+										
+										.widget__people .widget__link:hover
+										.widget__people .widget__link:focus {}
 
 						/* Verify Insurance Coverage */
 									
@@ -734,7 +785,9 @@ nav{
 					color: var(--bs-gray-700);
 				}
 
-				.blog-grid__link {}
+				.blog-grid__link {
+					background: pink;
+				}
 
 					.blog-grid__image {}
 
@@ -760,13 +813,14 @@ nav{
 
 					.blog-grid__read-more {
 						margin-top: 5px;
+						margin-bottom: 45px;
 						font-size: 12px;
 						line-height: 1.5;
 						text-transform: uppercase;
 					}
 
 					.blog-grid__meta {
-						margin-top: 45px;
+						margin-top: auto;
 						line-height: 1.3em;
 						color: var(--bs-gray-500);
 						font-size: 12px;
@@ -1520,18 +1574,18 @@ margin-bottom: 20px;
 }
 
 .widget ul li{
-	padding-bottom:10px;
+	/* padding-bottom:10px; */
 }
 
 .widget ul li a{
-	color: #000000;
-    font-size: 14px;
+	/* color: #000000; */
+    /* font-size: 14px; */
 }
 
 .widget :not(.text-widget) h3{
-	border-bottom:solid 1px #000;
+	/* border-bottom:solid 1px #000;
 	padding-bottom:15px;
-	margin-bottom:20px;
+	margin-bottom:20px; */
 }
 
 .widget.reviewed-by{

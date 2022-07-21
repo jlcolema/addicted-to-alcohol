@@ -105,15 +105,15 @@
 		<?php endif; ?>
 
 		<?php if(have_rows('people_also_read')) : ?>
-			<div class="widget">
+			<div class="widget widget__people">
 				<div class="links-widget">
 				<?php if(get_field('widget_heading', 'options')) : ?>
-					<h3><?php echo get_field('widget_heading', 'options'); ?></h3>
+					<h3 class="widget__title"><?php echo get_field('widget_heading', 'options'); ?></h3>
 				<?php endif; ?>
-				<ul>
+				<ul class="widget__list">
 						<?php while(have_rows('people_also_read')) : the_row(); ?>
 							<?php $title = get_sub_field('title'); $url = get_sub_field('url'); ?>
-							<li><a href="<?php echo $url; ?>"><?php echo $title; ?></a></li>
+							<li class="widget__item"><a href="<?php echo $url; ?>" class="widget__link"><?php echo $title; ?></a></li>
 						<?php endwhile; ?>
 					</ul>
 				</div>
