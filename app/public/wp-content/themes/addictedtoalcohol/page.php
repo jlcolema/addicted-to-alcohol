@@ -86,7 +86,9 @@
 						<!-- Sidebar -->
 							
 						<div class="col-12 col-md-12 col-lg-4 page-content__col" id="sidebar">
-							<?php get_sidebar(); ?>
+							<div class="page-content__sidebar">
+								<?php get_sidebar(); ?>
+							</div>
 						</div>
 			
 					</div>

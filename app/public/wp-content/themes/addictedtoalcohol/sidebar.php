@@ -12,7 +12,7 @@
 
 	<div class="review-block show-desktop">
 		<div class="medical-reviewer">
-		<?php $post_object = get_field('medical_reviewer'); if( $post_object ): 
+		<?php $post_object = get_field('medical_reviewer'); if( $post_object ):
 					$post = $post_object;
 					setup_postdata( $post ); ?>
 		<div class="mr-headshot-block">
@@ -55,38 +55,21 @@
 	}
 	?>
 
-	<div class="widget">
-		<div class="text-widget">
+	<div class="widget widget__cta">
+		<div class="text-widget widget__text-widget">
 			<?php if($bc_title) : ?>
-				<h3><?php echo $bc_title; ?></h3>
+				<h3 class="widget__title"><?php echo $bc_title; ?></h3>
 			<?php endif; ?>
 			<?php if($bc_content) : ?>
-				<p><?php echo $bc_content; ?></p>
+				<p class="widget__content"><?php echo $bc_content; ?></p>
 			<?php endif; ?>
 			<?php if($bc_button) : ?>
-				<a href="<?php echo $bc_button['url']; ?>" class="btn btn-secondary"><?php echo $bc_button['title']; ?> <i class="fas fa-phone-alt"></i></a>
+				<a href="<?php echo $bc_button['url']; ?>" class="btn btn-secondary btn-outline-light widget__button"><?php echo $bc_button['title']; ?> <i class="fas fa-phone-alt widget__icon"></i></a>
 			<?php endif; ?>
-			
-			<!-- <p class="middle-text">Or fill out this form</p> -->			
-			
-			<!-- <form action="#" id="contact_form" method="POST" onsubmit="submitted=true;" target="hidden_iframe">
-			<div class="form-group">
-				<input class="form-control" type="text" name="Name" value="" id="contact_name" placeholder="Name">
-			</div>
-			<div class="form-group">
-				<input class="form-control required phoneValidate phone" type="text" name="Phone Number" value="" id="contact_number" placeholder="Phone Number"> 
-			</div>
-			<div class="form-group">
-				<textarea id="contact_message" name="Message" rows="4" class="form-control" placeholder="How can we help?"></textarea>
-			</div>
-			<div class="form-group">
-				<input class="btn btn-default ctc-submit-button" name="Submit" type="submit" value="Reclaim Your Life" id="contact_submit" style="width:100%;">
-			</div>
-			</form>
 			
 			<?php if($bc_sub_text) : ?>
 				<p class="small"><?php echo $bc_sub_text; ?></p>
-			<?php endif; ?> -->
+			<?php endif; ?>
 						
 		</div>
 	</div>
