@@ -1,13 +1,17 @@
 <?php if(get_field('sources')) : ?>
-	<div class="article-source-btn"><a href="#" onclick="toggle('article-sources')"><i class="fa fa-link" aria-hidden="true"></i> View this article's sources</a></div>
-	<div id="article-sources" class="additional-info article_sources" style="display:none;">
-		<div class="row">
-			<div class="col-12 col-md-12">
-				<div class="article-source">Sources</div>
-				<ul>					
-					<li><?php the_field('sources'); ?></a></li>
-				</ul>
+
+	<div class="article-source-btn sources__button">
+		<a href="#" onclick="toggle('article-sources')" class="sources__label">Article Sources</a>
+	</div>
+	
+	<div id="article-sources" class="article_sources sources__container" style="display:none;">
+		<div class="row sources__row">
+			<div class="col-12 col-md-12 sources__col">
+				<ol class="sources__list">
+					<?php the_field('sources'); ?>
+				</ol>
 			</div>
 		</div>
 	</div>
+	
 <?php endif; ?>
