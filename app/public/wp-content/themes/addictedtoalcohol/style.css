@@ -608,7 +608,7 @@ nav{
 								.widget__insurance .widget__button:hover,
 								.widget__insurance .widget__button:focus {
 									background: none !important;
-									border-color: var(--bs-white) !important;
+									border-color: var(--ata-blue) !important;
 								}
 /* -----------------------------
 * Hero
