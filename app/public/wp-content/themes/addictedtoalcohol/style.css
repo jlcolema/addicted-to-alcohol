@@ -279,7 +279,7 @@ header .container{
 }
 
 .after-header{
-	min-height:145px;
+	min-height: 104px;
 }
 
 .header-cta{
@@ -326,6 +326,136 @@ nav{
 	margin-top:0px;
 	/* margin-left: -20px !important; */
 }
+
+/* -----------------------------
+ * Default Page
+ * -------------------------- */
+
+.page-content {
+	padding: 10px 0 60px 0;
+}
+
+	/* Section
+	 * -------------------------- */
+
+	.page-content__section {
+		position: relative;
+		background-color: #138BD666;
+	}
+
+		/* Waves */
+
+		.section-wave {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+		}
+		
+			.section-wave .section-wave__svg {
+				position: relative;
+				display: block;
+				left: 50%;
+			}
+			
+				.section-wave .elementor-shape-fill {
+					fill: var(--bs-white);
+				}
+			
+		/* Upper Wave */
+				
+		.section-wave--upper {
+			top: 0;
+		}
+		
+			.section-wave__svg--upper {
+				width: calc(225% + 1.3px);
+				height: 86px;
+				transform: translate(-50%) rotateY(180deg);
+			}
+			
+		/* Lower Wave */
+			
+		.section-wave--lower {
+			bottom: 0;
+		}
+		
+			.section-wave__svg--lower {
+				width: calc(167% + 1.3px);
+				height: 145px;
+				transform: translate(-50%) rotate(180deg);
+			}
+
+		.page-content__section .page-content__container {
+			padding-top: 130px;
+			padding-bottom: 140px;
+		}
+
+			.page-content__section .page-content__row {}
+			
+				.page-content__section .page-content__col {}
+				
+					/* Breadcrumbs */
+				
+					.page-content__breadcrumbs {
+						margin-bottom: 12px;
+						font-size: 14px;
+						color: var(--bs-gray-700);
+					}
+					
+						.page-content__breadcrumbs span {}
+						
+							.page-content__breadcrumbs a {
+								color: var(--ata-gold) !important;
+								text-decoration: none;
+							}
+							
+							.page-content__breadcrumbs a:hover,
+							.page-content__breadcrumbs a:focus {}
+					
+							.page-content__breadcrumbs .breadcrumb_last {}
+					
+					/* Title */
+					
+					.page-content__title {}
+					
+						.page-content__title .page-content__heading {
+							font-size: 50px;
+							font-weight: 700;
+							color: var(--bs-gray-900);
+							text-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+						}
+						
+					/* Meta */
+						
+					.page-content__meta {
+						margin-top: 10px;
+						color: var(--bs-gray-700);
+					}
+
+	/* Content
+	 * -------------------------- */
+
+	.page-content__main {}
+	
+		.page-content__container {}
+					
+			.page-content__row {}
+				
+				.page-content__col {}
+									
+					/* Content */
+					
+					.post-content {
+						background: green;
+					}
+					
+					/* Sidebar */
+					
+					.sidebar-widget,
+					.widget {
+						background: orange;
+					}
 
 /* -----------------------------
 * Hero
@@ -1199,10 +1329,7 @@ footer ul li{
     padding: 30px 30px;
 }
 
-.page-content{
-	padding-top:60px;
-	padding-bottom:60px;
-}
+
 
 .page-content h2{
 	margin-bottom: 25px;
@@ -3311,12 +3438,11 @@ list-style: none;
 /**	Quicktags - End **/
 
 #breadcrumbs {
-    margin-bottom: 20px;
+    
 }
 
 #breadcrumbs span {
-    font-size: 12px;
-    color: #666;
+
 }
 
 .page-snippet {
