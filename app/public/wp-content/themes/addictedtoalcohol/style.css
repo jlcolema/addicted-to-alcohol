@@ -461,14 +461,35 @@ nav{
 							background: var(--ata-pink);
 						}
 						
+						/* CTA */
+						
 						.widget__cta {
+							position: relative;
 							padding: 44px 0 44px 0;
 							color: var(--bs-white);
-							background: var(--ata-blue);
+							background-color: var(--ata-blue);
+							background-image: url("assets/images/widget-cta-shutterstock_613990049.jpg");
+							background-size: cover;
+							background-position: 50%;
 							border-radius: 5px;
 						}
 						
-							.widget__cta .widget__text-widget {}
+						.widget__cta::after {
+							content: "";
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							border-radius: 5px;
+							background: #1388d6bf;
+							z-index: 1
+						}
+						
+							.widget__cta .widget__text-widget {
+								position: relative;
+								z-index: 2;
+							}
 							
 								.widget__cta .widget__title {
 									margin-bottom: 16px;
@@ -487,6 +508,7 @@ nav{
 									background: none;
 									box-shadow: none;
 									border-color: var(--bs-white);
+									border-width: 2px;
 								}
 								
 								.widget__cta .widget__button:hover,
@@ -499,6 +521,44 @@ nav{
 										display: none;
 									}
 
+						/* Verify Insurance Coverage */
+									
+						.widget__insurance {
+							position: relative;
+							padding: 44px;
+							color: var(--bs-white);
+							background-color: var(--bs-gray-200);
+							border-radius: 5px;
+						}
+						
+							.widget__insurance .widget__text-widget {}
+							
+								.widget__insurance .widget__title {
+									margin-bottom: 16px;
+									font-size: 39px;
+									line-height: 1.2;
+									color: var(--ata-blue);
+								}
+								
+								.widget__insurance .widget__content {
+									margin-bottom: 16px;
+									line-height: 24px !important;
+									color: var(--bs-gray-600);
+								}
+								
+								.widget__insurance .widget__button {
+									color: var(--bs-gray-600);
+									background: none;
+									box-shadow: none;
+									border-color: var(--ata-blue);
+									border-width: 2px;
+								}
+								
+								.widget__insurance .widget__button:hover,
+								.widget__insurance .widget__button:focus {
+									background: none !important;
+									border-color: var(--bs-white) !important;
+								}
 /* -----------------------------
 * Hero
 * -------------------------- */
@@ -4082,6 +4142,7 @@ margin-right:10px;
 	background-color: var(--ata-blue);
 	box-shadow: 0 -0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.13),
 				0 -0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.25);
+	z-index: 999;
 }
 
 	.call-now__container {}

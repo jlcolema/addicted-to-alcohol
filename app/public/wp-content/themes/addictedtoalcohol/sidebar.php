@@ -120,5 +120,19 @@
 			</div>
 
 		<?php endif; ?>
+	
+	<!-- Verify Insurance Coverage -->
+
+	<div class="widget widget__insurance">
+		<div class="text-widget widget__text-widget">
+			
+			<h3 class="widget__title">Verify Insurance Coverage</h3>
+
+			<p class="widget__content">Need help determining if your insurance will cover Alcohol Treatment? Use our verification form by clicking below.</p>
+			
+			<a href="/insurance-verification/" class="btn btn-secondary btn-outline-light widget__button">Verify Coverage</a>
+									
+		</div>
+	</div>
 
 <!-- /sidebar -->
