@@ -1,18 +1,18 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
-		<script async src="//99884.cctm.xyz/t.js"></script>
-		<meta charset="<?php bloginfo('charset'); ?>">		
+		<script async src="https://99884.cctm.xyz/t.js"></script>
+		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<?php wp_head(); ?>
-		<?php 
+		<?php
 	
-    if(is_front_page()){	
+    if(is_front_page()){
 
         $markup = <<<SCHEMA
-        <script type='application/ld+json'> 
+        <script type='application/ld+json'>
 		  {
 			"@context": "http://www.schema.org",
 			"@type": "MedicalClinic",
@@ -30,9 +30,9 @@
 			  "addressRegion": "OH",
 			  "postalCode": "45891",
 			  "addressCountry": "USA"
-			},  
+			},
 			  "hasMap": "https://www.google.com/maps/place/Ohio+Recovery+Center/@40.4308349,-85.3084071,9z/data=!4m9!1m2!2m1!1sOhio+Recovery+Center!3m5!1s0x883e6bc9f87e9661:0x85627a7e3cdead67!8m2!3d40.8773096!4d-84.5313835!15sChRPaGlvIFJlY292ZXJ5IENlbnRlcpIBGmFkZGljdGlvbl90cmVhdG1lbnRfY2VudGVy",
-			"openingHours": "Mo-Su",			
+			"openingHours": "Mo-Su",
 			"parentOrganization" : {
 				"name" : "ARK Behavioral Health",
 				"url" : "https://arkbh.com/"},
@@ -127,7 +127,7 @@ SCHEMA;
 
 						</div>
 			
-					</nav>	
+					</nav>
 				
 				</div>
 
@@ -167,7 +167,7 @@ SCHEMA;
 
 			</div>
 
-		</div>		
+		</div>
 		
 	</header>
 	<?php if(!is_front_page()): ?>

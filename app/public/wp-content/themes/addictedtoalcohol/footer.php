@@ -115,6 +115,6 @@ if( have_rows('cta', 'option') ){
 
 </body>
 
-<script defer src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+<script defer src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
 </html>
