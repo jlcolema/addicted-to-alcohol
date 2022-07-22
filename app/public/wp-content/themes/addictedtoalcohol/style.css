@@ -1619,7 +1619,7 @@ footer ul li{
 }
 
 .post-content img{
-	box-shadow:0 0 10px 0 rgba(0,0,0,.5);
+	/* box-shadow:0 0 10px 0 rgba(0,0,0,.5); */
 	margin-bottom:60px;
 	height:auto;
 }

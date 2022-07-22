@@ -87,7 +87,7 @@
 							<div class="post-content">
 								
 								<?php include(get_template_directory().'/templates/quick-jump.php'); ?>
-								<?php include(get_template_directory().'/templates/page-snippet.php'); ?>
+								<?php /* include(get_template_directory().'/templates/page-snippet.php'); */ ?>
 								
 								<!-- post thumbnail -->
 								<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
