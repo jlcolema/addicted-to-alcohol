@@ -17,24 +17,10 @@
 		<div class="row">
 			<h3>Treatment Questions? Call 24/7.<a href="tel:+18889797127" class="wp-block-button__link">(888) 979-7127</a></h3>
 		</div>
-	</div>       
+	</div>
 </div>
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro:300,400,400i,600,700' ] }
-  };
-
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
 <script>var $ = jQuery;$(function() {$('.lazy').lazy();});</script>
 	</body>
 <script defer src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>

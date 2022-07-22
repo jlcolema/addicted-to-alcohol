@@ -256,13 +256,13 @@ function am_add_css( ) {
     }
     
     // external CSS
-    $am_links = array(
-		'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
-		'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap',
-	);
-    foreach($am_links as $am_link){
-        wp_enqueue_style('am_'.sanitize_title($am_link), $am_link,array());
-    }
+   //  $am_links = array(
+	// 	'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
+	// 	'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap',
+	// );
+    // foreach($am_links as $am_link){
+    //     wp_enqueue_style('am_'.sanitize_title($am_link), $am_link,array());
+    // }
 }
 
 /**
