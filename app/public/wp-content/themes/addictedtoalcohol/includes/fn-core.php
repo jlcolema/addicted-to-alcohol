@@ -250,7 +250,7 @@ function am_add_css( ) {
 		'/assets/css/vendor/swiper-bundle.min.css',
 		'/assets/css/components/chat.css',
 		'style.css',
-        'style-wp.css'); // example: array('style1', 'style2');
+      '/assets/css/style-wp.css'); // example: array('style1', 'style2');
     foreach($am_files as $am_file){
         wp_enqueue_style('am_'.sanitize_title($am_file), get_theme_file_uri($am_file),array(),filemtime( get_theme_file_path($am_file)));
     }
