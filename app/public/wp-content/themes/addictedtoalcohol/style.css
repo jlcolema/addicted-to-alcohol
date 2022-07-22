@@ -6,6 +6,1216 @@ License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
 */
 
+/* Simple Custom CSS */
+
+/************************************************************************************** DESKTOP STYLES ********************************************************************************************************
+**************************************************************************************************************************************************************************************************************/
+
+/***** Body *****/
+
+/*	h1, h2, h3, h4, h5, h6 {
+		font-family:'lato';
+	}
+
+p {
+		color:#000;
+	} *''
+
+p a, li a {
+	color:#faab54;
+	font-weight:500;
+} */
+
+/* #freight h1, #freight h2, #freight h3, #freight h4, #freight h5, #freight p, #freight ul, #freight div{
+font-family:'Open Sans', Sans-serif;
+} */
+
+span#freight-bold {
+	font-weight:800!important;
+}
+
+#freight .elementor-button-text {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+ul li {
+	margin-bottom:8px;
+}
+
+
+p, ul {
+	font-weight:500!important;
+	font-size:16px!important;
+	line-height:28px!important;
+}
+
+address {
+	font-style:normal!important;
+}
+
+/******************************************************* Inline CTA Section *******************************************************/
+
+	#inline-cta-text h2, #inline-cta-text h4 {
+		color:#000;
+	}
+
+ul li {
+	color:black;
+}
+
+/******************************************************* Header *******************************************************/
+
+#desktop-header {
+	display:block;
+}
+
+#tablet-header {
+	display:none;
+}
+
+.mobile-header {
+	display:none;
+}
+
+#logo-svg {
+	height:75px;
+	display:flex;
+	align-items:center;
+}
+
+
+.elementor-nav-menu a, .elementor-nav-menu li {
+	font-family:'Slabo 27px' !important;
+}
+
+
+/******************************************************* Homepage *******************************************************/
+
+.our-mission-home {
+	max-width:650px;
+	display:flex;
+	justify-content:center;
+	margin:0 auto;
+}
+
+.hero-text h2 {
+	font-weight:bold!important;
+	font-size:45px!important;
+}
+
+
+
+ .elementor-testimonial__name {
+	font-weight:600!important;
+}
+
+
+.blog-header {
+	max-width:300px;
+}
+
+
+
+.hero-sub-text {
+	max-width:550px;
+}
+.elementor-1653 .elementor-element.elementor-element-b1faf28 .elementor-icon-list-item {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.accred {
+line-height:28px!important;
+}
+
+.accred ul {
+	padding-left:18px;
+}
+
+.eael-adv-accordion .eael-accordion-list .eael-accordion-header {
+	font-family:'Open Sans', Sans-serif;
+}
+
+.sub-text {
+	max-width:700px;
+	margin:0 auto;
+}
+
+
+/******************************************************* Page & Post Template *******************************************************/
+
+.elementor-widget-uael-posts .uael-post__meta-data span {
+	font-family:'Open Sans', Sans-serif !important;
+
+}
+#post-page-template h1,
+#post-page-template h3 {
+	color:#000;
+}
+
+#post-page-template p {
+	font-family:'Open Sans', Sans-serif;
+	/* font-weight:300; */
+	font-size:17px;
+	line-height:26px;
+}
+
+#post-page-template h3 {
+	font-family:'Open Sans', Sans-serif;
+	font-weight:bold;
+	color:#000;
+	font-size:26px;
+	line-height:34px;
+	margin-top:35px;
+	margin-bottom:20px;
+}
+
+.elementor-widget-table-of-contents .elementor-toc__header {
+	display:none;
+}
+
+#reviewer-name h4 {
+	color:#7B8FBC!important;
+}
+
+ .elementor-toc__list-wrapper {
+  display:flex;
+  flex-flow:row wrap;
+  text-align:left!important;
+}
+
+.elementor-toc__list-item {
+	margin-bottom:4px;
+}
+
+.elementor-toc__list-item-text-wrapper i {
+	display:none;
+}
+
+.elementor-toc--content-ellipsis .elementor-toc__list-item-text {
+		margin-right: 10px;
+	border-right: 1px solid #000;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 1px;
+	line-height:16px;
+	margin-bottom:5px;
+}
+
+ .fa-accordion-icon {
+	 display:none;
+ }
+
+.elementor-21 .elementor-element.elementor-element-217e4be .eael-adv-accordion .eael-accordion-list .eael-accordion-header{
+	max-width:135px;
+}
+
+.elementor-21 .elementor-element.elementor-element-05c7610 .eael-adv-accordion .eael-accordion-list .eael-accordion-header {
+	max-width:125px;
+}
+
+.eael-adv-accordion .eael-accordion-list .eael-accordion-header.active .fa-toggle {
+	transform:none;
+	-webkit-transform:none;
+
+}
+
+#article-source-accordian a {
+	color: #1a9ce8;
+}
+
+#article-source-accordian .eael-accordion-content p {
+	margin-bottom:10px;
+	font-family:'Open Sans', Sans-serif;
+	font-size:13px;
+}
+
+#tablet-toc, #tablet-medical-review {
+	display:none;
+}
+
+ #reply-title {
+	display:none!important;
+}
+
+.logged-in-as p{
+	margin-top:-8px!important;
+}
+
+.logged-in-as a {
+	color:#000!important;
+	font-family:'Open Sans', Sans-serif !important;
+	font-size:13px;
+}
+
+.comment-form-comment, .form-submit {
+	font-family:'Open Sans', Sans-serif !important;
+	font-size:14px!important;
+}
+
+#comments {
+	width:50%;
+	margin-left:-10px;
+}
+
+#comments #submit {
+	background: #faab54;
+	border: 1px solid #faab54;
+	color: #fff;
+	width:100%;
+}
+
+#recent-posts-sidebar h5 {
+	font-weight:700;
+	font-size:19px;
+	border-bottom:1px solid #2f4a5d;
+	padding-bottom:10px;
+	color:#000!important;
+	margin-bottom:25px;
+	font-family:'Open Sans', Sans-serif;
+}
+
+#recent-posts-sidebar a {
+	color:black;
+	font-family:'Open Sans', Sans-serif;
+	font-size:16px;
+	font-weight:500;
+	line-height: 24px;
+	margin-top: -4px;
+	margin-bottom: 5px;
+}
+
+#recent-posts-sidebar ul {
+  margin: 0 0 0 -25px;
+}
+#recent-posts-sidebar ul {
+  list-style-type: none;
+}
+#recent-posts-sidebar ul li {
+
+  line-height:18px;
+  margin-bottom:10px;
+  display:flex;
+  flex-flow:row nowrap;
+  align-content:flex-start;
+  
+}
+
+
+#recent-posts-sidebar ul li:before {
+  content: "-";
+  color: #2f4a5d;
+  font-size:25px;
+  text-indent:-15px;
+  margin-right:8px;
+ 
+}
+
+#treatment-resources a {
+	color:#2f4a5d ;
+	font-weight:500;
+	
+}
+
+#post-content h4 {
+	color:#000;
+	font-size:20px;
+	font-weight:600;
+	margin:20px 0px;
+	font-family:'Open Sans', Sans-serif;
+}
+
+#post-content h2 {
+	font-size:30px;
+	margin:30px 0px;
+	font-family:'Open Sans', Sans-serif;
+	color: #2F4A5D;
+	font-weight:bold;
+}
+
+#post-content a {
+	color:#1a9ce8;
+}
+
+#recent-posts a {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.elementor-widget-table-of-contents .elementor-toc__list-item {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.post-sidebar-content p{
+font-size:15px!important;
+line-height:24px!important;
+margin: 5px 0 !important;
+}
+
+#post-content ul {
+	font-family:'Open Sans', Sans-serif;
+	font-size:17px;
+	line-height:26px;
+}
+
+/***** Home *****/
+#highlights i {
+	font-size:38px;
+	color:#7B8FBC;
+	margin-bottom:25px;
+}
+
+#highlights img {
+	display:none;
+}
+
+#treatment-phases-cta {
+	max-width:400px;
+}
+#phases-of-treatment {
+	display:flex;
+	justify-content:center;
+	max-width:400px;
+   margin: -72px auto;
+}
+
+#phase-container {
+	min-height:400px;
+}
+
+#blog-header {
+	max-width:230px;
+}
+
+#mobile-logo-slider {
+	display:none;
+}
+
+#cred-img .elementor-row {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+
+#cred-img-mobile {
+	display:none;
+}
+
+#post-preview .uael-post__thumbnail {
+	height:300px;
+	overflow:hidden;
+}
+
+#post-preview .uael-post__thumbnail img {
+	min-width:550px!important;
+	height:300px!important;
+}
+
+
+
+
+/******************************************************* Footer *******************************************************/
+
+#sticky-footer-cta-tablet {
+	display:none;
+}
+
+#sticky-footer-cta-mobile {
+	display:none;
+}
+
+#mobile-footer-links {
+	display:none;
+}
+
+#footer-links a, #mobile-footer-links a {
+	color:#000;
+	font-weight:300;
+		font-family:'Slabo 27px';
+}
+
+#footer-links a, #mobile-footer-links a {
+	color:#000;
+	font-weight:300;
+}
+
+
+/******************************************************* PPC Landing Page Template *******************************************************/
+#ppc-cta .elementor-button {
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+/******************************************************* Contact *******************************************************/
+iframe {
+	float:left;
+}
+
+.page-id-2118 #footer-cta-section, .page-id-2125 #footer-cta-section, .page-id-2127 #footer-cta-section, .page-id-7465 #footer-cta-section {
+	visibility:hidden;
+}
+
+.page-id-2118 #footer-container-2, .page-id-2125 #footer-container-2, .page-id-2127 #footer-container-2, .page-id-7465 #footer-container-2 {
+	padding-top: 45px;
+}
+
+#contact-a a {
+	font-weight:300!important;
+}
+
+/******************************************************* Blog Roll *******************************************************/
+#blog-roll-sidebar {
+	max-width:325px;
+	width:325px;
+}
+
+
+#blog-container {
+	display:flex!important;
+	justify-content:center!important;
+}
+
+.elementor-4099 .elementor-element.elementor-element-42a4432 .uael-post__header-filters {
+	padding-left:0px;
+}
+
+.elementor-4099 .elementor-element.elementor-element-42a4432 .uael-grid-pagination {
+	padding-right:220px;
+}
+
+/*.uael-post__thumbnail {
+	max-height:220px;
+} */
+
+.uael-post__header-filters {
+	padding-left:0px;
+	padding-bottom:0px!important;
+}
+
+.elementor-4099 .elementor-element.elementor-element-d764ccc .uael-post__header-filter {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+/******************************************************* About*******************************************************/
+
+
+#about-hero-tagline {
+	max-width:900px;
+	display:flex;
+	justify-content:center;
+	margin: 0 auto;
+}
+
+#about-img-grid  {
+	margin-bottom:30px;
+}
+
+#vision-container {
+	max-height:550px;
+}
+
+#guarantee-container {
+	max-height:710px;
+}
+
+#about-success .swiper-pagination {
+	bottom:70px!important;
+}
+
+#core-beliefs, #revolving-door  {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.elementor-2101 .elementor-element.elementor-element-bda6940 .eael-adv-accordion .eael-accordion-list .eael-accordion-header {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.elementor-2101 .elementor-element.elementor-element-058c28e .elementor-testimonial__text, .elementor-2101 .elementor-element.elementor-element-058c28e .elementor-testimonial__name {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.elementor-2101 .elementor-element.elementor-element-058c28e .elementor-testimonial__name {
+	font-weight:600;
+}
+
+/******************************************************* Forms *******************************************************/
+
+/* Contact Elevate Page */
+#field_2_5 {
+	width:48%;
+	margin-right:15px;
+}
+
+#field_2_1 {
+	width:48%;
+}
+
+#gform_fields_2 {
+	display:flex;
+	flex-flow:row wrap;
+}
+
+#field_2_2, #field_2_3, #field_2_4 {
+	width:100%;
+}
+
+/* Verify Insurance Page */
+.gform_wrapper ul.gfield_checkbox li label, label#label_3_8_0, label#label_3_8_1 {
+	font-weight:200!important;
+}
+
+#verify-insurance-form .gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half {
+	background:#f2f2f2;
+	padding:15px;
+}
+
+#verify-insurance-form #field_3_1, #verify-insurance-form #field_3_3, #verify-insurance-form #field_3_5, #verify-insurance-form #field_3_7, #verify-insurance-form #field_3_9, #verify-insurance-form #field_3_11, #verify-insurance-form #field_3_15, #verify-insurance-form #field_3_16 {
+	margin-right:15px;
+	width:47%;
+}
+
+#verify-insurance-form #field_3_16 {
+	padding-bottom:18px;
+}
+
+#verify-insurance-form #input_3_3, #verify-insurance-form #input_3_7 {
+	width:90%;
+	margin-right:12px!important;
+}
+
+/* PPC Landing Page */
+#request-call .gform_wrapper .gform_footer {
+	margin:0px;
+}
+
+#request-call .gform_wrapper form {
+	display:flex;
+	flex-flow:row nowrap;
+}
+
+#request-call #input_23_1 {
+	width:100%;
+	min-width:210px;
+}
+
+#request-call {
+	display:flex;
+	justify-content:center;
+}
+
+/* Sidebar */
+
+.elementor-21 .elementor-element.elementor-element-f133647 .uael-gf-style input[type=submit] {
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+#sidebar-form #field_19_3, #sidebar-form #field_19_2 {
+	width:100%;
+}
+
+#field_19_5, #field_19_4 {
+	width:100%;
+}
+
+
+#tablet-sidebar-form .uael-gf-style .gform_body ul, #sidebar-form .uael-gf-style .gform_body ul {
+	display:flex;
+	flex-flow:row wrap;
+	
+}
+
+#tablet-sidebar-form #field_19_3 {
+	width:48.5%;
+	margin-right:18px;
+}
+
+#tablet-sidebar-form #field_19_2 {
+	width:48.5%;
+}
+
+#tablet-sidebar-form select#input_19_4.large.gfield_select {
+	height:45px;
+}
+
+#tablet-sidebar-form .uael-gf-style .uael-gf-select-custom:after {
+	right:1.5em;
+}
+
+/******************************************************* Facility Template *******************************************************/
+.facility-accord .elementor-accordion .elementor-accordion-title {
+	font-family:'Open Sans', Sans-serif !important;
+}
+
+.fac-about-hero {
+	max-width:550px;
+	margin:auto;
+}
+
+.insurance-copy {
+	max-width:700px;
+	margin:auto;
+}
+
+.facility-about a {
+	color:#ffe77d!important;
+	font-weight:bold!important;
+}
+
+/************************************************************************************** TABLET STYLES ********************************************************************************************************
+**************************************************************************************************************************************************************************************************************/
+@media only screen and (max-width:1024px) {
+	
+
+/***** Header *****/
+	#desktop-header {
+	display:none;
+}
+	
+	#desktop-sidebar {
+		display:none;
+	}
+
+#tablet-header {
+	display:block;
+}
+	
+	/***** Off Canvas Menu *****/
+	#nav-menu-shortcode .menu-item {
+		border-top:1px solid #f2f2f2;
+		
+	}
+	
+	.eael-offcanvas-custom-widget ul {
+		padding:0px 30px;
+	}
+
+/***** Page & Post Template *****/
+	
+	.elementor-widget-table-of-contents .elementor-toc__header-title {
+		font-family:'Open Sans', Sans-serif !important;
+	}
+	
+	#tablet-toc {
+		display:block;
+		border:1px solid #f2f2f2;
+	}
+	
+	.elementor-toc__toggle-button {
+		width:81%;
+		justify-content:flex-end;
+	}
+	
+	#tablet-medical-review {
+		display:inline-block;
+	}
+	
+	#table-of-contents {
+		display:none;
+	}
+	
+.elementor-widget-table-of-contents .elementor-toc__header {
+	display:inline-flex;
+	width:100%;
+	padding:10px;
+}
+	
+	.elementor-toc__list-wrapper {
+		display:block;
+		padding:20px;
+	}
+	
+.elementor-toc__list-item-text-wrapper i {
+	display:inline;
+}
+	
+	.elementor-toc--content-ellipsis .elementor-toc__list-item-text {
+		margin-right: 10px;
+	border-right: none;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height:24px;
+	margin-bottom:5px;
+		list-style-type:disc;
+}
+	
+	#post-page-template h3 {
+		font-size:25px;
+		line-height:30px;
+	}
+	
+	#post-page-template p {
+		font-size:18px;
+		line-height:27px;
+	}
+	
+	#comments {
+	width:100%;
+	
+}
+	
+	/***** Home *****/
+	/*#blog-header {
+	max-width:100%;
+}*/
+	
+	.hero-text h2 {
+	font-size:35px!important;
+		line-height:38px;
+}
+	
+	 #posts-container .elementor-posts-container {
+		grid-column-gap: 30px;
+	}
+	
+	.eael-logo-carousel.swiper-container .swiper-slide img {
+	max-width:135px;
+}
+
+.eael-logo-carousel.swiper-container .swiper-slide {
+	max-width:160px;
+}
+	
+	 #post-preview .uael-post__thumbnail {
+	height:200px;
+	overflow:hidden;
+}
+
+#post-preview .uael-post__thumbnail img {
+	min-width:350px!important;
+	height:200px!important;
+}
+
+#post-preview {
+	max-height:425px;
+	overflow:hidden;
+}
+	
+	
+.hero-sub-text {
+	margin: 0 auto;
+	max-width:500px;
+	}
+	
+	.elementor-1653 .elementor-element.elementor-element-9dbd779 > .elementor-element-populated {
+		box-shadow:none;
+	}
+	
+	/***** Location Landing *****/
+
+	
+	.elementor-2118 .elementor-element.elementor-element-886249a .elementor-posts-container {
+		grid-column-gap:25px;
+	}
+	
+	/* Placerville */
+	#placerville-address {
+	max-width:200px;
+	margin:-10px auto 0px
+}
+	
+	/***** About *****/
+	#guarantee-container {
+		max-height:800px;
+	}
+	
+	#about-success .swiper-pagination {
+	top:396px;
+}
+	
+	#about-hero-tagline {
+	max-width:550px;
+	}
+	
+	.insurance-copy {
+	max-width:500px;
+	margin:auto;
+}
+
+	
+	/***** Footer *****/
+
+	span#sticky-cta {
+		font-weight:900!important;
+	}
+	
+	/***** Blog *****/
+	.elementor-4099 .elementor-element.elementor-element-42a4432 .uael-grid-pagination {
+	padding-right:0px;
+		text-align:center;
+}
+	
+	.uael-post__header-filters-wrap {
+		margin-bottom:15px;
+	}
+	.elementor-4099 .elementor-element.elementor-element-42a4432 .uael-post__header-filters {
+		text-align:center;
+	}
+
+	/***** Contact *****/
+	
+.elementor-page-66 #footer-container-2 {
+	margin-top:-94px;
+}
+	
+}
+
+/************************************************************************************** MOBILE STYLES ********************************************************************************************************
+**************************************************************************************************************************************************************************************************************/
+@media only screen and (max-width:767px) {
+
+	
+/***** Inline CTA Section *****/
+
+#inline-cta-text h2, #inline-cta-text h4 {
+	color:#ffffff!important;
+}
+	
+#inline-cta-text h2{
+	font-weight:600;
+}
+	
+#inline-cta-button .elementor-button {
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+	
+	/***** Home *****/
+	
+	.hero-text h2 {
+	font-size:31px!important;
+		line-height:34px;
+}
+		#posts-container .elementor-posts-container {
+				grid-column-gap: 15px;
+	max-height: 265px;
+				overflow:hidden;
+	}
+	
+	#mobile-logo-slider {
+	display:inline;
+}
+	
+	#logo-slider {
+		display:none;
+	}
+	
+	
+	#cred-img-mobile {
+	display:inline;
+}
+
+	#cred-img {
+		display:none;
+	}
+	
+	  #post-preview {
+	max-height:fit-content;
+}
+	
+	#home-test-slider .elementor-testimonial__image {
+		display:none;
+	}
+	
+	#our-locations-home .elementor-column-wrap{
+	box-shadow:none;
+}
+	
+	.blog-header {
+		max-width:200px;
+		margin: 0 auto;
+	}
+	
+	/***** About *****/
+	span#about-hero {
+	font-family:'calorie';
+	text-transform:lowercase;
+	font-size:60px!important;
+	margin:0 5px;
+	color:#faab54;
+	line-height:30px!important;
+}
+
+#about-hero-tagline {
+	max-width:700px;
+	}
+	
+	#vision-container {
+		max-height:700px;
+	}
+	
+		#guarantee-container {
+		max-height:1000px;
+			height:1000px;
+	}
+	
+		#about-success .swiper-pagination {
+	top:362px;
+}
+	
+	.elementor-testimonial--align-left .elementor-testimonial {
+		flex-flow:column-reverse;
+	}
+	
+	.elementor-widget-testimonial-carousel .elementor-testimonial__image img {
+		width:125px!important;
+		height:125px!important;
+		margin-bottom:15px;
+	}
+	
+	.elementor-widget-testimonial-carousel .swiper-slide {
+		padding:0px!important;
+	}
+	
+/***** Page & Post Template ******/
+.elementor-toc__toggle-button {
+	width:60%;
+	justify-content:flex-end;
+}
+	
+	#post-page-template h3 {
+		font-size:23px;
+		line-height:30px;
+	}
+	
+	#post-page-template p {
+		font-size:18px;
+		line-height:26px;
+	}
+	
+	#post-content h4 {
+	color:#000;
+	font-size:18px;
+	font-weight:600;
+	margin:20px 0px;
+		line-height:26px;
+}
+
+#post-content h2 {
+	font-size:24px;
+	margin:30px 0px;
+}
+
+/***** Header *****/
+	#desktop-header {
+	display:none;
+}
+	
+	#desktop-sidebar {
+		display:none;
+	}
+
+#tablet-header {
+	display:none;
+}
+	
+	.mobile-header {
+		display:block;
+	}
+	
+	  #logo-svg {
+			justify-content:center;
+	}
+	
+/***** Location Landing *****/
+	#what-to-expect-sub {
+		max-width:185px;
+	}
+	
+	#cta-sub h2 {
+		max-width:185px;
+		margin:0 auto;
+	}
+	
+	.elementor-2118 .elementor-element.elementor-element-886249a .elementor-posts-container {
+		grid-row-gap: 0px;
+	}
+	
+/***** Contact *****/
+
+	.elementor-page-66 #footer-container-2 {
+	margin-top: 0px;
+	}
+	
+/***** Footer *****/
+	#footer-links {
+		display:none;
+	}
+	
+	#mobile-footer-links {
+	display:block;
+}
+	
+	/***** Forms *****/
+	
+	/* Contact Elevate Page */
+	   #field_2_5, #field_2_1, #gform_fields_2, #field_2_2, #field_2_3, #field_2_4 {
+		width:100%;
+		margin-right:0px;
+	}
+	
+	/* Validate Insurance Form */
+	#verify-insurance-form .gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half {
+	background:#fff;
+	padding:0px;
+}
+
+#verify-insurance-form #field_3_1, #verify-insurance-form #field_3_3, #verify-insurance-form #field_3_5, #verify-insurance-form #field_3_7, #verify-insurance-form #field_3_9, #verify-insurance-form #field_3_11, #verify-insurance-form #field_3_15, #verify-insurance-form #field_3_16 {
+	margin-right:0px;
+	width:100%;
+}
+
+#verify-insurance-form #field_3_16 {
+	padding-bottom:0px;
+}
+	
+	.gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li {
+		margin-bottom:0px;
+	}
+	
+body .gform_wrapper ul li.field_description_below div.ginput_container_checkbox, body .gform_wrapper ul li.field_description_below div.ginput_container_radio {
+		margin-top:0px!important;
+	}
+	
+.elementor-5295 .elementor-element.elementor-element-34d8b08 .uael-gf-style input[type="submit"], .elementor-5295 .elementor-element.elementor-element-34d8b08 .uael-gf-style input[type="button"] {
+		width:100%;
+		display:flex;
+		justify-content:center;
+	}
+	
+	/* PPC Landing Page */
+	  #request-call #input_23_1 {
+		min-width:185px;
+	}
+	
+	#tablet-sidebar-form #field_19_3 {
+	width:48.5%;
+	margin-right:18px;
+}
+
+#tablet-sidebar-form #field_19_3, #tablet-sidebar-form #field_19_2 {
+	width:100%;
+	margin-right:0px;
+}
+
+#input_19_5_3_container {
+	margin-bottom:15px;
+}
+
+ .elementor-21 .elementor-element.elementor-element-842da94 .uael-gf-style input[type=submit] {
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+	
+}
+
+#contact-us-frm input {
+	border: 1px solid #ccc;
+	padding: 12px 15px;
+	font-family: 'Slabo 27px';
+	margin: 0 0 10px 0;
+	border-radius: 4px !important;
+}
+
+#contact-us-frm .cta-submit-button{
+
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.25px;
+	fill: var( --e-global-color-primary );
+	color: var( --e-global-color-primary );
+	background-color: var( --e-global-color-text );
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+	padding: 18px 40px 18px 40px;
+}
+
+.middle-text {
+	text-align: center;
+	margin: 0 0 20px!important;
+	font-size: 14px!important;
+	font-style: italic;
+}
+
+.middle-text:before, .middle-text:after {
+	background-color: #e6e6e6;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 25%;
+}
+
+.ctc-submit-button {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	background-color: #2f4a5d;
+	border-radius: 4px;
+	padding: 10px;
+	border: 0;
+	font-family: 'Open Sans' !important;
+}
+
+.ctc-submit-button:hover,.ctc-submit-button:focus{
+	color: white;
+	background-color: #275d83;
+}
+
+#contact-us-frm-side input {
+	border: 1px solid #ccc;
+	padding: 12px 15px;
+	font-family: 'Slabo 27px';
+	margin: 0 0 10px 0;
+	border-radius: 4px !important;
+}
+
+.sidebar-call-btn a {
+	width: 100% !important;
+		font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.25px;
+	color: white;
+	background-color: #2f4a5d;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+	padding: 12px 65px 12px 65px;
+	border: 0;
+	font-family: 'Open Sans' !important;
+}
+
+/*------------------------------------*\
+	FORM VALIDATION
+\*------------------------------------*/
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.inputError {
+	border: 1px solid #ee3839 !important;
+	border-width: 1px 1px 4px 4px;
+	box-shadow: -3px 3px 3px #ccc;
+}
+
+.width-85-perc{
+	
+	width:85%;
+}
+
+
 /* -----------------------------
  * Structure
  * -------------------------- */
