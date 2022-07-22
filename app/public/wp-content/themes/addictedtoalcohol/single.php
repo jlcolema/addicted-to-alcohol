@@ -36,7 +36,7 @@
 							
 							<!-- Category -->
 								
-							<div class="">
+							<div class="page-content__category">
 								
 								<a href="#">Category</a>
 								

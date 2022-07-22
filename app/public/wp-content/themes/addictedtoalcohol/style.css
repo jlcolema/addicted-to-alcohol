@@ -453,6 +453,24 @@ nav{
 					
 							.page-content__breadcrumbs .breadcrumb_last {}
 					
+					/* Category */
+					
+					.page-content__category {
+						margin: 20px 0 10px 0;
+						font-size: 13px;
+						line-height: 1;
+					}
+					
+						.page-content__category a {
+							padding: 4px 6px;
+							color: var(--bs-white) !important;
+							background: var(--ata-gold);
+							text-decoration: none;
+						}
+						
+						.page-content__category a:hover,
+						.page-content__category a:focus {}
+					
 					/* Title */
 					
 					.page-content__title {}
