@@ -77,10 +77,11 @@
 						<div class="col-12 col-md-12 col-lg-8 page-content__col">
 	
 							<div class="post-content">
-									<?php get_template_part( 'templates/content', 'page' ); ?>
-									<?php include(get_template_directory().'/templates/author-information.php'); ?>
-									<?php include(get_template_directory().'/templates/article-resources.php'); ?>
+								<?php get_template_part( 'templates/content', 'page' ); ?>
+								<?php include(get_template_directory().'/templates/author-information.php'); ?>
+								<?php include(get_template_directory().'/templates/article-resources.php'); ?>
 							</div>
+
 						</div>
 						
 						<!-- Sidebar -->
