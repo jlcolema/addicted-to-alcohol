@@ -29,7 +29,7 @@ function replace_core_jquery_version() {
 
 function add_custom_scripts() {
  
-  wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/assets/css/jquery.fancybox.css', array(), '1.1', 'all');
+  wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/assets/css/vendor/jquery.fancybox.css', array(), '1.1', 'all');
   wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.js', array ( 'jquery' ), 1.1, true);
 
 

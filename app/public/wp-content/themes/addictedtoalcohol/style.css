@@ -6,23 +6,47 @@ License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
 */
 
-/* Ideal Site Structure
- *
- * 01. Header
- * 02. Main
- * 02.01. Hero, Section
- * 02.02. Content
- * 02.03. Sidebar
- * 03. Footer
-*/
+/* -----------------------------
+ * Structure
+ * -------------------------- */
+
+/* Configuration, Utilities, and Helpers */
+
+/* @import url('vendor/bootstrap/bootstrap.css'); */
+@import url('assets/css/common/variables.css');
+@import url('assets/css/common/fonts.css');
+
+/* Baseline */
+
+/* @import url('common/baseline.css'); */
+/* @import url('common/miscellaneous.css'); */
+
+/* Layouts */
+
+@import url('assets/css/layouts/header.css');
+@import url('assets/css/layouts/main.css');
+@import url('assets/css/layouts/footer.css');
+
+/* Components */
+
+@import url('assets/css/components/hero.css');
+@import url('assets/css/components/form.css');
+@import url('assets/css/components/sources.css');
+
+/* Vendor */
+
+/* Page-Specific */
+
+@import url('assets/css/pages/home.css');
+
+
+
+
+
 
 /* Variables */
 
-:root {
-	--ata-blue: #03b0ff;
-	--ata-gold: #d68e29;
-	--ata-pink: rgba(255, 192, 203, 0.65);
-}
+
 
 body {
 	-webkit-font-smoothing: antialiased;

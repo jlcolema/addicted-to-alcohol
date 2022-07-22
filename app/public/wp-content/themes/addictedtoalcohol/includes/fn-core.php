@@ -1,4 +1,4 @@
-<?php 
+<?php
 if(function_exists('get_field')){
 
 	function am_get_field($field_name, $html_open = '', $html_close = '', $post_id = null, $esc = ''){
@@ -178,8 +178,8 @@ function am_texturize_shortcode_before($content) {
 	return $content;
 }
 
-function am_remove_wpautop( $content ) { 
-	$content = do_shortcode( shortcode_unautop( $content ) ); 
+function am_remove_wpautop( $content ) {
+	$content = do_shortcode( shortcode_unautop( $content ) );
 	$content = preg_replace('#^<\/p>|^<br \/>|<p>$#', '', $content);
 	return $content;
 }
@@ -216,17 +216,17 @@ function am_add_javascript( ) {
 		wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), '4.3.0'); // popper
         wp_enqueue_script('popper'); // Enqueue it!
 
-    	wp_register_script('bootstrap', get_template_directory_uri() . '/assets/bootstrap/bootstrap.js', array('jquery'), '5.1.3'); // bootstrap
+    	wp_register_script('bootstrap', get_template_directory_uri() . '/assets/css/vendor/bootstrap/bootstrap.js', array('jquery'), '5.1.3'); // bootstrap
         wp_enqueue_script('bootstrap'); // Enqueue it!
 
         wp_register_script('fontawesome', 'https://kit.fontawesome.com/379650a1dc.js', array('jquery'), '2.7.1'); // fontawesome
         wp_enqueue_script('fontawesome'); // Enqueue it!
 		
 		wp_register_script('swiper_min', get_template_directory_uri() . '/includes/js/swiper-bundle.min.js', array('jquery'), '1.0.0'); // swiper_min
-        wp_enqueue_script('swiper_min'); // Enqueue it!		
+        wp_enqueue_script('swiper_min'); // Enqueue it!
 		
         wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('scripts'); // Enqueue it!	
+        wp_enqueue_script('scripts'); // Enqueue it!
 		
 		wp_enqueue_script('jquery.lazy.min', get_template_directory_uri() . '/assets/js/jquery.lazy-master/jquery.lazy.min.js', array(), '1.0.0', 'true' );
 
@@ -246,9 +246,9 @@ function am_add_css( ) {
     
     // internal CSS
     $am_files = array(
-		'/assets/bootstrap/bootstrap.css',
-		'/assets/css/swiper-bundle.min.css',
-		'/assets/css/chat.css',
+		'/assets/css/vendor/bootstrap/bootstrap.css',
+		'/assets/css/vendor/swiper-bundle.min.css',
+		'/assets/css/components/chat.css',
 		'style.css',
         'style-wp.css'); // example: array('style1', 'style2');
     foreach($am_files as $am_file){
@@ -259,7 +259,7 @@ function am_add_css( ) {
     $am_links = array(
 		'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
 		'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap',
-	); 
+	);
     foreach($am_links as $am_link){
         wp_enqueue_style('am_'.sanitize_title($am_link), $am_link,array());
     }
@@ -335,9 +335,9 @@ function am_mime_types($mimes) {
 
 function am_svg_thumb_display() {
 	echo '<style>
-	td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { 
-	 width: 100% !important; 
-	 height: auto !important; 
+	td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail {
+	 width: 100% !important;
+	 height: auto !important;
 	}
 	</style>';
 }
