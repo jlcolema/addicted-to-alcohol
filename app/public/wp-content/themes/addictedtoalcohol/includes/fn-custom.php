@@ -39,12 +39,12 @@ add_action( 'wp_enqueue_scripts', 'add_custom_scripts' );
 
 
 
-if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
+if ( ! file_exists( get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php' ) ) {
     // File does not exist... return an error.
     return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
 } else {
     // File exists... require it.
-    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+    require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php';
 }
 
 register_nav_menus( array(
