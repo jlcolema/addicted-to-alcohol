@@ -1,0 +1,38 @@
+/* -----------------------------
+ * Additional Info
+ * -------------------------- */
+
+ .additional-info{
+	border-top:solid 2px rgba(122,122,122,.29);
+	margin-top:45px;
+	padding:30px 0;
+}
+
+.additional-info p{
+	margin-bottom:0px;
+	font-size:14px;
+}
+
+.additional-info p.small{
+	font-size:11px !important;
+}
+
+.additional-info ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+.additional-info ul li{
+	
+}
+
+.additional-info ul li a{
+	font-size:14px;
+	word-break: break-all;
+	color: #2F4A5D;
+}
+
+.additional-info ul li p{
+	
+}

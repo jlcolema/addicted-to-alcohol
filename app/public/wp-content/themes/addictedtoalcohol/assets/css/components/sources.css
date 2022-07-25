@@ -1,0 +1,37 @@
+/* -----------------------------
+ * Sources
+ * -------------------------- */
+
+.sources {}
+
+	.sources__button {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+		line-height: 1;
+		font-weight: bold;
+	}
+	
+		.sources__label {
+			color: var(--bs-gray-900) !important;
+			text-decoration: none;
+		}
+	
+	.sources__container {
+		margin-top: 30px;
+	}
+	
+		.sources__row {}
+		
+			.sources__col {}
+			
+				.sources__heading {}
+				
+				.sources__list {}
+				
+					.sources__item {}
+					
+						.sources__item a {
+							text-decoration: none;
+						}
+						
+						.sources__item a:hover,
+						.sources__item a:focus {}

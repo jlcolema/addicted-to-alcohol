@@ -1,0 +1,200 @@
+/* -----------------------------
+ * Blog
+ * -------------------------- */
+
+/* PAGE: BLOG */
+
+/***/
+.text-dark{
+    color: #000 !important;
+}
+
+.text-blue{
+    color: #19415B !important;
+}
+
+/***/
+
+.section-c1 {
+	padding: 0 0 100px;
+}
+
+.section-c1 .title{
+    padding: 65px 0 50px 0;
+}
+
+.section-c1 h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+}
+
+.section-c1 .container-fluid{
+    max-width: 1140px;
+    padding: 0px;
+}
+
+.section-c1 .container-fluid .box-content{
+    padding: 10px 5px 0 0;
+}
+
+.section-c1 .container-fluid .box-content .box-card{
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.section-c1 .container-fluid .box-content .card{
+    height: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.35);
+    border: none;
+}
+
+.section-c1 .container-fluid .box-content .card .card-body{
+    padding: 26px 30px 50px 30px;
+}
+
+.section-c1 .container-fluid .box-content .card h3{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.section-c1 .container-fluid .box-content .card .date{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.section-c1 .container-fluid .box-content .card p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: .9rem;
+}
+
+
+@media (max-width:991px){
+    .section-c1 .container-fluid .box-content-2 {
+        padding: 10px;
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .section-c1 .container-fluid .box-content .box-card{
+        width: 100%;
+    }
+}
+
+
+.section-c1 .container-fluid .box-content-2{
+    padding: 10px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    margin-top: 0;
+    margin-bottom: 35px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.section-c1 .container-fluid .box-content-2 .card h5{
+    font-size: 19px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-c1 .container-fluid .box-content-2 .card p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    padding: 0 15px 0 10px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card span{
+    font-size: 13px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card .button-wraper a{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    fill: #FFF;
+    color: #FFF;
+	font-weight: 700;
+    background-color: #2F4A5D;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.35);
+    padding: 9px 65px 9px 65px;
+    margin: 0 0 8px 0;
+}
+
+.section-c1 .container-fluid .box-content-2 .card .button-wraper a:hover{
+    background: rgba(138, 37, 41, 0.95) !important;
+}
+
+.section-c1 .container-fluid .box-content-2 .card .card-body{
+    padding: 20px 5px 20px 5px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-body-two h5{
+    font-size: 19px;
+	font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-two .border-bottom{
+    border-bottom: 1px solid #000 !important;
+    margin-bottom: 20px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-two{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding: 20px 20px 20px 20px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-two .card-body-two{
+    padding: 10px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-two h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-body-two .post{
+   margin-bottom: 15px;
+}
+
+.section-c1 .container-fluid .box-content-2 .card-body-two .mb-6{
+    margin-bottom: 10px;
+}
+
+.section-c1 .container-fluid .box-content .nav-numbers{
+	box-shadow: none;
+	padding: 0 15px 30px !important;
+}
+
+.section-c1 .container-fluid .box-content  .numbers{
+    background-color: #EAE9F3;
+    padding: 5px 10px;
+    margin: 0 0 5px;
+}
+
+.section-c1 .container-fluid .box-content .fz{
+    font-size: 13px;
+}
+
+.section-c1 .container-fluid .box-content .nav-numbers a:hover{
+    background-color: #EAE9F3;
+    margin: 0 0 5px;
+}
+
+.section-c1 .container-fluid .box-content .nav-numbers a{
+    padding: 5px 10px;
+}

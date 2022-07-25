@@ -1,0 +1,156 @@
+/* -----------------------------
+ * Hero
+ * -------------------------- */
+
+ .hero {
+	position: relative;
+	background-size:cover;
+	background-position:center;
+	margin-top: 112px;
+	background-color: #138BD666;
+}
+
+	.hero__wave {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.hero__svg {
+		position: relative;
+		display: block;
+		left: 50%;
+	}
+
+		.hero__svg .elementor-shape-fill {
+			fill: var(--bs-white);
+		}
+
+.hero__wave--upper {
+	top: 0;
+}
+
+	.hero__svg--upper {
+		width: calc(225% + 1.3px);
+		height: 280px;
+		transform: translate(-50%) rotateY(180deg);
+	}
+
+.hero__wave--lower {
+	bottom: 0;
+}
+
+	.hero__svg--lower {
+		width: calc(106% + 1.3px);
+		height: 181px;
+		transform: translateX(-50%) rotate(180deg);
+	}
+
+.hero__container {
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+	.hero__pre-heading {
+		margin-bottom: 9px;
+		font-size: 50px;
+		font-weight: 700;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+		color: var(--bs-gray-900);
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+	}
+
+	.hero__subheading {
+		width: 100%;
+		max-width: 570px;
+		font-size: 20px !important;
+		line-height: 1.4em !important;
+		font-family: "Verdana", sans-serif;
+		font-weight: 400 !important;
+		margin-bottom: 48px;
+		color: var(--bs-gray-800);
+		text-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+	}
+
+	.hero__button {
+		color: var(--bs-white) !important;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.22);
+	}
+
+	.hero .container{
+		position: relative;
+		display:flex;
+		justify-content:center;
+		align-items:flex-start;
+		flex-direction:column;
+		/* min-height: 600px; */
+		/* max-width:1000px;
+		padding-bottom:50px; */
+		z-index: 1;
+	}
+	
+	.hero .pre-heading{
+		
+	}
+	
+	.hero h1 {
+		padding-bottom: 15px;
+		margin-bottom: 30px;
+		padding-right: 100px;
+		border-bottom: solid 3px #00C4B3;
+		color: 000;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	}
+	
+	.hero p {
+	
+	}
+
+/* Needs Organized */
+
+@media (max-width:767px){
+	
+	.hero h1{
+		padding-right:0px;
+	}
+	
+	.hero{
+		text-align:center;
+		margin-top: 50px;
+	}
+	
+	.hero .container{
+		align-items:center;
+	}
+	
+	.hero .pre-heading{
+		font-size:20px;
+	}
+
+}
+
+.hero-layout-three .section-a1 .background .text{
+	padding-top:185px;
+	padding-bottom:185px;
+}
+
+.hero-layout-three .section-a1 .background .opacity{
+
+}
+
+.hero-layout-three{
+	
+}
+
+.hero-layout-three{
+	
+}
+
+.hero-layout-three{
+	
+}
+
+.hero-layout-three.style-white .text-white{
+	color:#000 !important;
+}
