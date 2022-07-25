@@ -60,7 +60,7 @@ SCHEMA;
 	
 <body <?php body_class($body_class); ?>>
 
-	<header class="header">
+	<header class="header header--fixed">
 
 		<div class="container header__container">
 		
