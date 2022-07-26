@@ -176,7 +176,7 @@
 							
 							.widget__cta {
 								position: relative;
-								padding: 44px 0 44px 0;
+								padding: 40px 40px 43px 40px;
 								color: var(--bs-white);
 								background-color: var(--ata-blue);
 								background-image: url("../../images/widget-cta-shutterstock_613990049.jpg");
@@ -203,22 +203,25 @@
 								}
 								
 									.widget__cta .widget__title {
-										margin-bottom: 16px;
+										max-width: 200px;
+										margin: 0 auto 10px auto;
 										font-size: 23px;
 										line-height: 1.5;
-										font-weight: normal;
+										/* font-weight: normal; */
 									}
 									
 									.widget__cta .widget__content {
-										margin-bottom: 16px;
+										display: inline-block;
+										max-width: 180px;
+										margin-bottom: 0 auto 16px auto;
 										line-height: 24px !important;
 									}
 									
 									.widget__cta .widget__button {
 										color: var(--bs-white);
-										background: none;
-										box-shadow: none;
-										border-color: var(--bs-white);
+										/* background: none; */
+										/* box-shadow: none; */
+										/* border-color: var(--bs-white); */
 										border-width: 2px;
 									}
 									
@@ -278,7 +281,7 @@
 										
 							.widget__insurance {
 								position: relative;
-								padding: 44px;
+								padding: 34px;
 								color: var(--bs-white);
 								background-color: var(--bs-gray-200);
 								border-radius: 5px;
