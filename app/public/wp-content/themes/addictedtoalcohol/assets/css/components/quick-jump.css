@@ -1,0 +1,41 @@
+/* -----------------------------
+ * Quick Jump
+ * -------------------------- */
+
+ .quick-jump {
+	margin: 20px 0;
+	/* background: pink; */
+ }
+
+	.quick-jump__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		.quick-jump__item {
+			padding-bottom: 4px !important;
+		}
+
+			.quick-jump__link {
+				margin-right: 15px;
+				padding-top: 0;
+				padding-right: 15px;
+				padding-bottom: 1px;
+				text-decoration: none;
+				font-size: 16px;
+				line-height: 1;
+				font-weight: 600 !important;
+				border-right: 1px solid #000000;
+			}
+
+			.quick-jump__item:last-child .quick-jump__link {
+				border-right: none;
+			}
+
+			.quick-jump__link:hover,
+			.quick-jump__link:focus {
+				text-decoration: underline;
+			}

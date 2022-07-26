@@ -498,31 +498,7 @@
 								.page-content ul li{
 									padding-bottom:15px;
 								}
-								
-								.page-anchors{
-									display:flex;
-									list-style:none;
-									flex-wrap:wrap;
-									padding:0;
-									margin:0;
-									margin-bottom:10px;
-								}
-								
-								.page-anchors li{
-									padding-bottom:4px !important;
-								}
-								
-								.page-anchors li a {
-									font-weight: 600!important;
-									margin-right: 15px;
-									border-right: 1px solid #000;
-									padding-right: 15px;
-									padding-top: 0;
-									padding-bottom: 1px;
-									line-height: 16px;
-									font-size: 16px;
-								}
-								
+																
 								.page-content .meta-date{
 									font-size:14px;
 									font-weight:600;

@@ -37,9 +37,7 @@
 .box-items .box-content.flex-wrap {
 	width: 100%;
 }
-.page-anchors li:last-child a {
-	border-right: none;
-}
+
 .additional-info.article_sources .article-source {
 	margin-top: 0;
 }
