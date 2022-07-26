@@ -156,7 +156,7 @@ SCHEMA;
 							<div class="primary-cta__phone">
 
 								<a class="primary-cta__link" href="<?php echo $button['url']; ?>">
-									<?php echo $button['title']; ?> (419) 904-4158
+									<?php echo $button['title']; ?>(855) 216-0376
 								</a>
 
 						<?php endwhile; else : endif; ?>
@@ -170,6 +170,7 @@ SCHEMA;
 		</div>
 		
 	</header>
+
 	<?php if(!is_front_page()): ?>
 	<div class="after-header"></div>
 	<?php endif; ?>
