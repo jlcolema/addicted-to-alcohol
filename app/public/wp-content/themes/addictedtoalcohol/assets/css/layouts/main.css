@@ -498,8 +498,6 @@
 									background: #212529;
 								}
 								
-								
-								
 								.page-content h2{
 									margin-bottom: 25px;
 									padding-top:10px;
@@ -514,8 +512,12 @@
 									color:#1a9ce8;
 								}
 								
+								.page-content ul {
+									margin-bottom: 25px;
+								}
+
 								.page-content ul li{
-									padding-bottom:15px;
+									/* padding-bottom:15px; */
 								}
 																
 								.page-content .meta-date{
