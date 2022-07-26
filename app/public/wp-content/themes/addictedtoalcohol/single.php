@@ -38,8 +38,8 @@
 								
 							<div class="page-content__category">
 								
-								<a href="#">Category</a>
-								
+								<?php the_category(', '); ?>
+
 							</div>
 							
 							<!-- Title -->
