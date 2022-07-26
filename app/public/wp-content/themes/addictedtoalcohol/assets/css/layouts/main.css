@@ -158,156 +158,161 @@
 					
 					/* Sidebar */
 					
-					.page-content__sidebar {}
-					
-						.sidebar-widget {
-							display: none;
+					#sidebar {}
+
+						.page-content__sidebar {
+							padding: 0 0 0 30px;
+							/* background: green; */
 						}
 						
-						.widget {
-							margin: 0 0 40px 0;
-						}
-						
-						/* CTA */
-						
-						.widget__cta {
-							position: relative;
-							padding: 44px 0 44px 0;
-							color: var(--bs-white);
-							background-color: var(--ata-blue);
-							background-image: url("../../images/widget-cta-shutterstock_613990049.jpg");
-							background-size: cover;
-							background-position: 50%;
-							border-radius: 5px;
-						}
-						
-						.widget__cta::after {
-							content: "";
-							position: absolute;
-							left: 0;
-							top: 0;
-							width: 100%;
-							height: 100%;
-							border-radius: 5px;
-							background: #1388d6bf;
-							z-index: 1
-						}
-						
-							.widget__cta .widget__text-widget {
-								position: relative;
-								z-index: 2;
+							.sidebar-widget {
+								display: none;
 							}
 							
-								.widget__cta .widget__title {
-									margin-bottom: 16px;
-									font-size: 23px;
-									line-height: 1.5;
-									font-weight: normal;
-								}
-								
-								.widget__cta .widget__content {
-									margin-bottom: 16px;
-									line-height: 24px !important;
-								}
-								
-								.widget__cta .widget__button {
-									color: var(--bs-white);
-									background: none;
-									box-shadow: none;
-									border-color: var(--bs-white);
-									border-width: 2px;
-								}
-								
-								.widget__cta .widget__button:hover,
-								.widget__cta .widget__button:focus {
-									background: none !important;
-									border-color: var(--bs-white) !important;
-								}
-								
-									.widget__cta .widget__icon {
-										display: none;
-									}
-
-						/* People Also Read */
-						
-						.widget__people {}
-						
-							.widget__links-widget {}
+							.widget {
+								margin: 0 0 40px 0;
+							}
 							
-								.widget__people .widget__title {
+							/* CTA */
+							
+							.widget__cta {
+								position: relative;
+								padding: 44px 0 44px 0;
+								color: var(--bs-white);
+								background-color: var(--ata-blue);
+								background-image: url("../../images/widget-cta-shutterstock_613990049.jpg");
+								background-size: cover;
+								background-position: 50%;
+								border-radius: 5px;
+							}
+							
+							.widget__cta::after {
+								content: "";
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								height: 100%;
+								border-radius: 5px;
+								background: #1388d6bf;
+								z-index: 1
+							}
+							
+								.widget__cta .widget__text-widget {
 									position: relative;
-									margin-bottom: 20px;
-									padding-bottom: 15px;
-									font-size: 23px;
-									line-height: 1;
-									color: var(--bs-gray-800);
+									z-index: 2;
 								}
 								
-								.widget__people .widget__title::after {
-									content: "";
-									position: absolute;
-									left: 0;
-									bottom: 0;
-									width: 39%;
-									height: 2px;
-									background: var(--ata-gold);
-									z-index: 1;
-								}
-								
-								.widget__people .widget__list {}
-								
-									.widget__people .widget__item {
-										margin-bottom: 12px;
-										padding-bottom: 0;
-										line-height: 1.25;
-										font-weight: 600;
+									.widget__cta .widget__title {
+										margin-bottom: 16px;
+										font-size: 23px;
+										line-height: 1.5;
+										font-weight: normal;
 									}
 									
-										.widget__people .widget__link {
-											text-decoration: none;
+									.widget__cta .widget__content {
+										margin-bottom: 16px;
+										line-height: 24px !important;
+									}
+									
+									.widget__cta .widget__button {
+										color: var(--bs-white);
+										background: none;
+										box-shadow: none;
+										border-color: var(--bs-white);
+										border-width: 2px;
+									}
+									
+									.widget__cta .widget__button:hover,
+									.widget__cta .widget__button:focus {
+										background: none !important;
+										border-color: var(--bs-white) !important;
+									}
+									
+										.widget__cta .widget__icon {
+											display: none;
+										}
+
+							/* People Also Read */
+							
+							.widget__people {}
+							
+								.widget__links-widget {}
+								
+									.widget__people .widget__title {
+										position: relative;
+										margin-bottom: 20px;
+										padding-bottom: 15px;
+										font-size: 23px;
+										line-height: 1;
+										color: var(--bs-gray-800);
+									}
+									
+									.widget__people .widget__title::after {
+										content: "";
+										position: absolute;
+										left: 0;
+										bottom: 0;
+										width: 39%;
+										height: 2px;
+										background: var(--ata-gold);
+										z-index: 1;
+									}
+									
+									.widget__people .widget__list {}
+									
+										.widget__people .widget__item {
+											margin-bottom: 12px;
+											padding-bottom: 0;
+											line-height: 1.25;
+											font-weight: 600;
 										}
 										
-										.widget__people .widget__link:hover
-										.widget__people .widget__link:focus {}
+											.widget__people .widget__link {
+												text-decoration: none;
+											}
+											
+											.widget__people .widget__link:hover
+											.widget__people .widget__link:focus {}
 
-						/* Verify Insurance Coverage */
-									
-						.widget__insurance {
-							position: relative;
-							padding: 44px;
-							color: var(--bs-white);
-							background-color: var(--bs-gray-200);
-							border-radius: 5px;
-						}
-						
-							.widget__insurance .widget__text-widget {}
+							/* Verify Insurance Coverage */
+										
+							.widget__insurance {
+								position: relative;
+								padding: 44px;
+								color: var(--bs-white);
+								background-color: var(--bs-gray-200);
+								border-radius: 5px;
+							}
 							
-								.widget__insurance .widget__title {
-									margin-bottom: 16px;
-									font-size: 39px;
-									line-height: 1.2;
-									color: var(--ata-blue);
-								}
+								.widget__insurance .widget__text-widget {}
 								
-								.widget__insurance .widget__content {
-									margin-bottom: 16px;
-									line-height: 24px !important;
-									color: var(--bs-gray-600);
-								}
-								
-								.widget__insurance .widget__button {
-									color: var(--bs-gray-600);
-									background: none;
-									box-shadow: none;
-									border-color: var(--ata-blue);
-									border-width: 2px;
-								}
-								
-								.widget__insurance .widget__button:hover,
-								.widget__insurance .widget__button:focus {
-									background: none !important;
-									border-color: var(--ata-blue) !important;
-								}
+									.widget__insurance .widget__title {
+										margin-bottom: 16px;
+										font-size: 39px;
+										line-height: 1.2;
+										color: var(--ata-blue);
+									}
+									
+									.widget__insurance .widget__content {
+										margin-bottom: 16px;
+										line-height: 24px !important;
+										color: var(--bs-gray-600);
+									}
+									
+									.widget__insurance .widget__button {
+										color: var(--bs-gray-600);
+										background: none;
+										box-shadow: none;
+										border-color: var(--ata-blue);
+										border-width: 2px;
+									}
+									
+									.widget__insurance .widget__button:hover,
+									.widget__insurance .widget__button:focus {
+										background: none !important;
+										border-color: var(--ata-blue) !important;
+									}
 
 								.offers{
 									background:#fff;
