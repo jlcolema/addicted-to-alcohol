@@ -404,7 +404,9 @@ get_header(); ?>
 								?>
 								<div class="col col-3 why-choose__col">
 									<?php if($image) : ?>
-										<img src="<?php echo $image_url; ?>" srcset="<?php echo $image_url_2x; ?> 2x" alt="<?php echo $image['alt']; ?>" class="why-choose__icon" />
+										<div class="why-choose__icon">
+											<img src="<?php echo $image_url; ?>" srcset="<?php echo $image_url_2x; ?> 2x" alt="<?php echo $image['alt']; ?>" class="why-choose__img" />
+										</div>
 									<?php endif; ?>
 									<?php if($title) : ?>
 										<h3 class="why-choose__title"><?php echo $title; ?></h3>
