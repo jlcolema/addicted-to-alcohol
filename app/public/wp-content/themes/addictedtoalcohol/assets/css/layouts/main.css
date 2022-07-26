@@ -227,8 +227,8 @@
 									
 									.widget__cta .widget__button:hover,
 									.widget__cta .widget__button:focus {
-										background: none !important;
-										border-color: var(--bs-white) !important;
+										/* background: none !important; */
+										/* border-color: var(--bs-white) !important; */
 									}
 									
 										.widget__cta .widget__icon {
