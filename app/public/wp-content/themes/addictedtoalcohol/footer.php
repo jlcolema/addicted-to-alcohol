@@ -103,7 +103,7 @@ if( have_rows('cta', 'option') ){
 				
 				<div class="col-md-auto call-now__button">
 				
-					<a href="tel:+4199044158" class="wp-block-button__link btn-primary btn-lg call-now__link"><i class="fas fa-phone-alt call-now__icon" aria-hidden="true"></i> (419) 904-4158</a>
+					<a href="tel:+8552160376" class="wp-block-button__link btn-primary btn-lg call-now__link"><i class="fas fa-phone-alt call-now__icon" aria-hidden="true"></i> (855) 216-0376</a>
 					
 				</div>
 				
