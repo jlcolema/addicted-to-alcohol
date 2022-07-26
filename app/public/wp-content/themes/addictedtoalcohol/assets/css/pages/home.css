@@ -156,11 +156,11 @@
 					height: 100%;
 					border-radius: 50%;
 					background: rgb(194, 231, 255);
-					z-index: 1;
+					z-index: -1;
 				}
 
 					.why-choose__img {
-						display: none;
+						/* display: none; */
 					}
 
 				.why-choose__title {
