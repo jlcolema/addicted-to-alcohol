@@ -52,7 +52,12 @@
 							
 							<!-- Author -->
 							
-							<div class="page-content__meta">Author and Date</div>
+							<div class="page-content__meta">
+
+								<div class="page-content__author">Author: <?php echo get_the_author_meta( 'display_name' ); ?></div>
+								<div class="page-content__date">Updated on: <?php echo get_the_date(); ?></div>
+							
+							</div>
 							
 						</div>
 						

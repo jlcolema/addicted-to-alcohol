@@ -126,6 +126,21 @@
 						color: var(--bs-gray-700);
 					}
 
+						.page-content__author {
+							display: inline;
+						}
+
+						.page-content__author::after {
+							content: "|";
+							position: relative;
+							top: -1px;
+							padding: 0 0 0 5px;
+						}
+
+						.page-content__date {
+							display: inline;
+						}
+
 	/* Content
 	 * -------------------------- */
 
