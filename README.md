@@ -1,3 +1,1 @@
 # Addicted to Alcohol
-
-Notes...
